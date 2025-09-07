@@ -1,0 +1,50 @@
+#dollbckgnd {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+}
+
+.dollbckgnd1 {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/dollbckgnd0.png);
+}
+
+.dollbckgnd2 {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/dollbckgnd1.png);
+}
+
+.dollbckgnd3 {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/dollbckgnd2.png);
+}
+
+.dollbckgnd4 {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/dollbckgnd3.png);
+}
+
+.dollbckgnd5 {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/dollbckgnd4.png);
+}

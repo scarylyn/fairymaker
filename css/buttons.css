@@ -1,0 +1,111 @@
+#nextbckgnd {
+  font-family: "DeliusSwashCaps";
+  font-style: normal;
+  font-weight: 400;
+  position: absolute;
+  right: 10px;
+  top: 75px;
+  border-radius: 30px;
+  border: none;
+  background-color: #ffd1dc;
+}
+
+#nextbckgnd:hover {
+  box-shadow: 2px 2px 5px 1px #a94064;
+}
+
+#nextwings {
+  font-family: "DeliusSwashCaps";
+  font-style: normal;
+  font-weight: 400;
+  position: absolute;
+  right: 10px;
+  top: 100px;
+  border-radius: 30px;
+  border: none;
+  background-color: #ffd1dc;
+}
+
+#nextwings:hover {
+  box-shadow: 2px 2px 5px 1px #a94064;
+}
+
+#nextbody {
+  font-family: "DeliusSwashCaps";
+  font-style: normal;
+  font-weight: 400;
+  position: absolute;
+  right: 10px;
+  top: 125px;
+  border-radius: 30px;
+  border: none;
+  background-color: #ffd1dc;
+}
+
+#nextbody:hover {
+  box-shadow: 2px 2px 5px 1px #a94064;
+}
+
+#nexthair {
+  font-family: "DeliusSwashCaps";
+  font-style: normal;
+  font-weight: 400;
+  position: absolute;
+  right: 10px;
+  top: 150px;
+  border-radius: 30px;
+  border: none;
+  background-color: #ffd1dc;
+}
+
+#nexthair:hover {
+  box-shadow: 2px 2px 5px 1px #a94064;
+}
+
+#nextdress {
+  font-family: "DeliusSwashCaps";
+  font-style: normal;
+  font-weight: 400;
+  position: absolute;
+  right: 10px;
+  top: 175px;
+  border-radius: 30px;
+  border: none;
+  background-color: #ffd1dc;
+}
+
+#nextdress:hover {
+  box-shadow: 2px 2px 5px 1px #a94064;
+}
+
+#nextshoes {
+  font-family: "DeliusSwashCaps";
+  font-style: normal;
+  font-weight: 400;
+  position: absolute;
+  right: 10px;
+  top: 200px;
+  border-radius: 30px;
+  border: none;
+  background-color: #ffd1dc;
+}
+
+#nextshoes:hover {
+  box-shadow: 2px 2px 5px 1px #a94064;
+}
+
+#nextaccent {
+  font-family: "DeliusSwashCaps";
+  font-style: normal;
+  font-weight: 400;
+  position: absolute;
+  right: 10px;
+  top: 225px;
+  border-radius: 30px;
+  border: none;
+  background-color: #ffd1dc;
+}
+
+#nextaccent:hover {
+  box-shadow: 2px 2px 5px 1px #a94064;
+}

@@ -1,0 +1,41 @@
+#shoes {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+}
+
+.shoes1 {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/shoe-dm004.png);
+}
+
+.shoes2 {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/shoe-dm005.png);
+}
+
+.shoes3 {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/shoe-dm006.png);
+}
+
+.shoes4 {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/shoe-dm007.png);
+}

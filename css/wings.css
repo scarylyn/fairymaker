@@ -1,0 +1,68 @@
+#wings {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+}
+
+.wings1 {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/wing-dm001.png);
+}
+
+.wings2 {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/wing-dm002.png);
+}
+
+.wings3 {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/wing-dm003.png);
+}
+
+.wings4 {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/wing-dm004.png);
+}
+
+.wings5 {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/wing-dm005.png);
+}
+
+.wings6 {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/wing-dm006.png);
+}
+
+.wings7 {
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/wing-dm007.png);
+}

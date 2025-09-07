@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Bonbon";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Bonbon-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "DeliusSwashCaps";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/DeliusSwashCaps-Regular.ttf") format("truetype");
+}
