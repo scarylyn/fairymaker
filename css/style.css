@@ -1,39 +1,58 @@
-@import url(../vendor/normalize.css);
-@import url(../css/wings.css);
-@import url(../css/body.css);
-@import url(../css/hair.css);
-@import url(../css/dress.css);
-@import url(../css/shoes.css);
-@import url(../css/dollbckgnd.css);
-@import url(../css/accent.css);
+@import url(../css/normalize.css);
 @import url(../css/buttons.css);
 @import url(../css/fonts.css);
+@import url(../css/weather.css);
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #e75480;
+}
 
 #pagetitle {
+  position: absolute;
+  top: -35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-family: "Bonbon";
   font-style: normal;
   font-weight: 400;
   color: #ffd1dc;
-  position: absolute;
-  left: 85px;
+  position: relative;
 }
 
 #container {
-  position: absolute;
-  margin: auto;
-  height: 430px;
-  width: 450px;
-  background-color: #e75480;
+  position: relative;
+  height: 530px;
+  width: 550px;
 }
 
-#basebckgnd {
+#dollarea {
   position: absolute;
-  height: 230px;
-  width: 230px;
-  top: 75px;
-  left: 100px;
-  right: 100px;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("../images/bg-dm030.png");
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+#accent,
+#dollarea,
+#dollbody,
+#dollbckgnd,
+#dress,
+#hair,
+#shoes,
+#wings {
+  position: absolute;
+  width: 330px;
+  height: 330px;
+  border-radius: 20px;
+  border: none;
 }
