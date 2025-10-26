@@ -1,7 +1,14 @@
 window.onload = init;
 
 function init() {
-  console.log("Window has loaded");
+  const savedWeather = JSON.parse(localStorage.getItem("savedWeather"));
+  const savedForecast = JSON.parse(localStorage.getItem("savedForecast"));
+
+  if (savedWeather && savedForecast) {
+    displayWeather(savedWeather);
+    displayHourlyForecast(savedForecast);
+  }
+
   showBckgnd(JSON.parse(localStorage.getItem("background")));
   showWings(JSON.parse(localStorage.getItem("wings")));
   showBody(JSON.parse(localStorage.getItem("body")));
@@ -9,6 +16,7 @@ function init() {
   showDress(JSON.parse(localStorage.getItem("dress")));
   showShoes(JSON.parse(localStorage.getItem("shoes")));
   showAccent(JSON.parse(localStorage.getItem("accent")));
+  console.log("Window has loaded");
 }
 
 // Weather Functions
@@ -17,7 +25,7 @@ function getWeather() {
   const city = document.getElementById("city").value;
 
   if (!city) {
-    alert("Please enter a ZIP code");
+    alert("Please enter a city");
     return;
   }
 
@@ -28,6 +36,7 @@ function getWeather() {
     .then((response) => response.json())
     .then((data) => {
       displayWeather(data);
+      localStorage.setItem("savedWeather", JSON.stringify(data));
     })
     .catch((error) => {
       console.error("Error fetching current weather data:", error);
@@ -38,6 +47,7 @@ function getWeather() {
     .then((response) => response.json())
     .then((data) => {
       displayHourlyForecast(data.list);
+      localStorage.setItem("savedForecast", JSON.stringify(data.list));
     })
     .catch((error) => {
       console.error("Error fetching hourly forecast data:", error);
@@ -50,14 +60,16 @@ function displayWeather(data) {
   const weatherInfoDiv = document.getElementById("weather-info");
   const weatherIcon = document.getElementById("weather-icon");
   const hourlyForecastDiv = document.getElementById("hourly-forecast");
+  const weatherTimestamp = document.getElementById("timestamp");
 
   // Clear previous content
   weatherInfoDiv.innerHTML = "";
   hourlyForecastDiv.innerHTML = "";
   tempDivInfo.innerHTML = "";
+  weatherTimestamp.innerHTML = "";
 
   if (data.cod === "404") {
-    weatherInfoDiv.innerHTML = `<p>&{data.message}</p>`;
+    weatherInfoDiv.innerHTML = `<p>${data.message}</p>`;
   } else {
     const cityName = data.name;
     const temperature = Math.round(data.main.temp);
@@ -69,10 +81,13 @@ function displayWeather(data) {
 
     const weatherHTML = `<p>${cityName}</p><p>${description}</p>`;
 
+    const dateTime = new Date(data.dt * 1000);
+
     tempDivInfo.innerHTML = temperatureHTML;
     weatherInfoDiv.innerHTML = weatherHTML;
     weatherIcon.src = iconUrl;
     weatherIcon.alt = description;
+    weatherTimestamp.innerHTML = dateTime;
 
     showImage();
   }
@@ -103,4 +118,18 @@ function displayHourlyForecast(hourlyData) {
 function showImage() {
   const weatherIcon = document.getElementById("weather-icon");
   weatherIcon.style.display = "block";
+}
+
+// Reset Button
+function resetPage() {
+  localStorage.clear();
+  location.reload();
+}
+
+// Hide Button
+function hideButtons() {
+  const hiddenBtns = document.getElementsByClassName("btn");
+  if (hiddenBtns) {
+    hiddenBtns.style.visiblity = "hidden";
+  }
 }

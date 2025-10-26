@@ -79,3 +79,13 @@ input {
   color: #fff;
   margin-top: 10px;
 }
+
+#timestamp {
+  position: absolute;
+  bottom: 97%;
+  font-family: "DeliusSwashCaps";
+  font-style: normal;
+  font-weight: 400;
+  color: #ffd1dc;
+  line-height: 20px;
+}

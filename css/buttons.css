@@ -24,22 +24,21 @@
 }
 
 .btn-column-prev {
+  position: relative;
+  right: 45%;
+  bottom: 30%;
   display: flex;
   margin: auto;
   flex-direction: column;
   align-items: baseline;
-  position: relative;
-}
-
-.btn-prev {
 }
 
 .btn-column-next {
+  position: relative;
+  left: -10%;
+  bottom: 30%;
   display: flex;
   margin: auto;
   flex-direction: column;
   align-items: baseline;
-}
-
-.btn-nxt {
 }

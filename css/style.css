@@ -13,9 +13,9 @@ body {
 }
 
 #pagetitle {
-  position: absolute;
+  position: relative;
   top: -35%;
-  left: 50%;
+  left: 28%;
   transform: translate(-50%, -50%);
   font-family: "Bonbon";
   font-style: normal;
@@ -33,7 +33,7 @@ body {
 #dollarea {
   position: absolute;
   top: 25%;
-  left: 50%;
+  left: 25%;
   transform: translate(-50%, -50%);
   background-repeat: no-repeat;
   background-size: cover;
