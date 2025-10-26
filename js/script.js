@@ -21,7 +21,7 @@ function init() {
 
 // Weather Functions
 function getWeather() {
-  const apiKey = "f2f6f1ebb0ac4c177eecaaaab4801a5e";
+  const apiKey = "THIS-IS-A-SECRET";
   const city = document.getElementById("city").value;
 
   if (!city) {
