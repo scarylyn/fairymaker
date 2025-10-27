@@ -5,41 +5,63 @@
 
 body {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
-  background-color: #e75480;
+  padding: 20px;
+  background: linear-gradient(135deg, #e75480 0%, #d64a7a 50%, #e75480 100%);
+  background-size: 200% 200%;
+  animation: gradient-shift 15s ease infinite;
+  box-sizing: border-box;
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 #pagetitle {
-  position: relative;
-  top: -35%;
-  left: 28%;
-  transform: translate(-50%, -50%);
   font-family: "Bonbon";
   font-style: normal;
   font-weight: 400;
   color: #ffd1dc;
-  position: relative;
+  font-size: 2.5em;
+  text-shadow: 3px 3px 6px rgba(169, 64, 100, 0.5),
+    0 0 20px rgba(255, 209, 220, 0.4);
+  letter-spacing: 2px;
+  margin: 0 0 5px 0;
+  text-align: center;
 }
 
 #container {
   position: relative;
-  height: 530px;
-  width: 550px;
+  height: 350px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #dollarea {
-  position: absolute;
-  top: 25%;
-  left: 25%;
-  transform: translate(-50%, -50%);
+  position: relative;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("../images/bg-dm030.png");
   border-radius: 15px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 24px rgba(169, 64, 100, 0.3),
+    0 0 0 2px rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  width: 247px;
+  height: 247px;
 }
 
 #accent,
@@ -51,8 +73,8 @@ body {
 #shoes,
 #wings {
   position: absolute;
-  width: 330px;
-  height: 330px;
-  border-radius: 20px;
+  width: 247px;
+  height: 247px;
+  border-radius: 15px;
   border: none;
 }

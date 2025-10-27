@@ -4,7 +4,6 @@
   </head>
   <title>FairyWeatherDemo</title>
   <body>
-    <div id="timestamp"></div>
     <h1 id="pagetitle">Create your Weather Fairy</h1>
       <div id="container">
         <div id="dollarea">
@@ -35,7 +34,7 @@
           <button type="button" id="nextdress" class="btn btn-nxt" onclick="nextDress()">Next Dress</button>
           <button type="button" id="nextshoes" class="btn btn-nxt" onclick="nextShoes()">Next Shoes</button>
           <button type="button" id="nextaccent" class="btn btn-nxt" onclick="nextAccent()">Next Accent</button>
-          <button type="button" id="hide" class="btn" onclick="hideButtons()">Hide Buttons</button>
+          <button type="button" id="hide" class="hidebtn" onclick="hideButtons()">Hide Buttons</button>
           </div>
           <!-- <button type="button" id="reset">Reset Page</button>
           <button type="button" id="hide">Hide Buttons</button> -->
@@ -49,6 +48,7 @@
       <div id="weather-info"></div>
       <div id="hourly-forecast"></div>
     </div>
+    <div id="timestamp"></div>
       <script src="./js/script.js"></script>
       <script src="./js/doll-buttons.js"></script>
   </body>

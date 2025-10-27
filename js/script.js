@@ -21,7 +21,7 @@ function init() {
 
 // Weather Functions
 function getWeather() {
-  const apiKey = "THIS-IS-A-SECRET";
+  const apiKey = "be4cbc6ddb60c449b151f55d149abd04";
   const city = document.getElementById("city").value;
 
   if (!city) {
@@ -76,12 +76,9 @@ function displayWeather(data) {
     const description = data.weather[0].description;
     const iconCode = data.weather[0].icon;
     const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@4x.png`;
-
     const temperatureHTML = `<p>${temperature}°F</p>`;
-
     const weatherHTML = `<p>${cityName}</p><p>${description}</p>`;
-
-    const dateTime = new Date(data.dt * 1000);
+    const dateTime = `Weather data searched at: ${new Date(data.dt * 1000)}`;
 
     tempDivInfo.innerHTML = temperatureHTML;
     weatherInfoDiv.innerHTML = weatherHTML;
@@ -122,6 +119,8 @@ function showImage() {
 
 // Reset Button
 function resetPage() {
+  const input = document.getElementById("city");
+  input.value = "";
   localStorage.clear();
   location.reload();
 }
@@ -129,7 +128,22 @@ function resetPage() {
 // Hide Button
 function hideButtons() {
   const hiddenBtns = document.getElementsByClassName("btn");
-  if (hiddenBtns) {
-    hiddenBtns.style.visiblity = "hidden";
+  const titleChange = document.getElementById("pagetitle");
+  for (let i = 0; i < hiddenBtns.length; i++) {
+    if (hiddenBtns[i].style.display === "none") {
+      hiddenBtns[i].style.display = "block";
+      titleChange.innerHTML = `Create Your Weather Fairy`;
+    } else {
+      hiddenBtns[i].style.display = "none";
+      titleChange.innerHTML = `The Weather Fairy`;
+    }
+  }
+
+  // Toggle button text
+  const hideBtn = document.getElementById("hide");
+  if (hideBtn.textContent === "Hide Buttons") {
+    hideBtn.textContent = "Show Buttons";
+  } else {
+    hideBtn.textContent = "Hide Buttons";
   }
 }
