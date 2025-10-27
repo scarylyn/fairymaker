@@ -78,3 +78,36 @@ body {
   border-radius: 15px;
   border: none;
 }
+
+@media screen and (max-width: 627px) {
+  #pagetitle {
+    font-size: 30px;
+    max-width: 550px;
+    min-width: 300px;
+  }
+
+  #container {
+    height: 250px;
+    width: 500px;
+  }
+
+  #dollarea {
+    width: 175px;
+    height: 175px;
+  }
+
+  #accent,
+  #dollarea,
+  #dollbody,
+  #dollbckgnd,
+  #dress,
+  #hair,
+  #shoes,
+  #wings {
+    position: absolute;
+    width: 175px;
+    height: 175px;
+    border-radius: 15px;
+    border: none;
+  }
+}

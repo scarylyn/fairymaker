@@ -48,3 +48,16 @@
   gap: 4px;
   pointer-events: auto;
 }
+
+@media screen and (max-width: 627px) {
+  .btn,
+  .hidebtn {
+    margin: 2px auto;
+    padding: 3px 6px;
+  }
+
+  .btn-column-prev,
+  .btn-column-next {
+    gap: 0px;
+  }
+}

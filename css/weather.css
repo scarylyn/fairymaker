@@ -147,3 +147,41 @@ input:focus {
   border: 1px solid rgba(255, 255, 255, 0.3);
   white-space: nowrap;
 }
+
+@media screen and (max-width: 627px) {
+  #weather-container {
+    width: 100%;
+    max-width: 425px;
+  }
+
+  #weather-info {
+    font-size: 13px;
+  }
+
+  #weather-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  #temp-div p {
+    font-size: 35px;
+  }
+
+  .hourly-item {
+    width: 50px;
+    margin-right: 0px;
+    padding: 2px;
+  }
+
+  .hourly-item img {
+    width: 15px;
+    height: 15px;
+    margin-bottom: 0px;
+  }
+
+  #timestamp {
+    font-size: 10px;
+    padding: 4px 10px;
+    margin-top: 5px;
+  }
+}
