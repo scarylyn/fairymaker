@@ -9,13 +9,13 @@ function init() {
     displayHourlyForecast(savedForecast);
   }
 
-  showBckgnd(JSON.parse(sessionStorage.getItem("background")));
-  showWings(JSON.parse(sessionStorage.getItem("wings")));
-  showBody(JSON.parse(sessionStorage.getItem("body")));
-  showHair(JSON.parse(sessionStorage.getItem("hair")));
-  showDress(JSON.parse(sessionStorage.getItem("dress")));
-  showShoes(JSON.parse(sessionStorage.getItem("shoes")));
-  showAccent(JSON.parse(sessionStorage.getItem("accent")));
+  showBckgnd(bckgndIndex);
+  showWings(wingsIndex);
+  showBody(bodyIndex);
+  showHair(hairIndex);
+  showDress(dressIndex);
+  showShoes(shoesIndex);
+  showAccent(accentIndex);
   console.log("Window has loaded");
 }
 
