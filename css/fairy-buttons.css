@@ -83,15 +83,16 @@
 }
 
 .toolbtns {
+  width: 315px;
   position: absolute;
-  bottom: -185px;
+  bottom: -190px;
 }
 
 @media screen and (max-width: 627px) {
   .btn,
   .hidebtn {
     margin: 2px auto;
-    padding: 3px 6px;
+    padding: 1.5px 3px;
   }
 
   .btn-column-prev,
@@ -101,11 +102,12 @@
 
   #page-switch {
     margin: 2px auto;
-    padding: 3px 6px;
+    padding: 1.5px 3px;
     bottom: 6px;
   }
 
   .toolbtns {
-    bottom: -225px;
+    width: 258px;
+    bottom: -205px;
   }
 }

@@ -40,14 +40,14 @@ body {
   text-shadow: 3px 3px 6px rgba(169, 64, 100, 0.5),
     0 0 20px rgba(255, 209, 220, 0.4);
   letter-spacing: 2px;
-  margin: 0 0 5px 0;
+  margin: 0 0 15px 0;
   text-align: center;
 }
 
 #container {
   position: relative;
-  height: 350px;
-  width: 500px;
+  height: 300px;
+  width: 515px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -89,8 +89,8 @@ body {
   }
 
   #container {
-    height: 250px;
-    width: 500px;
+    height: 225px;
+    width: 450px;
   }
 
   #accent,

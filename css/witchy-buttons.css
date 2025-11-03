@@ -60,12 +60,9 @@
 
 #page-switch {
   text-decoration: none;
-  position: absolute;
-  bottom: -182px;
   font-family: "Lacquer";
   font-style: normal;
   font-weight: 400;
-  cursor: pointer;
   border-radius: 22px;
   border: 2px solid rgba(255, 255, 255, 0.6);
   background: linear-gradient(135deg, #ead1ff 0%, #e3b3ff 100%);
@@ -85,21 +82,32 @@
   background: linear-gradient(135deg, #e3b3ff 0%, #da99ff 100%);
 }
 
+.toolbtns {
+  width: 330px;
+  position: absolute;
+  bottom: -190px;
+}
+
 @media screen and (max-width: 627px) {
   .btn,
   .hidebtn {
     margin: 2px auto;
-    padding: 3px 6px;
-  }
-
-  #page-switch {
-    margin: 2px auto;
-    padding: 3px 6px;
-    bottom: 6px;
+    padding: 1.5px 3px;
   }
 
   .btn-column-prev,
   .btn-column-next {
     gap: 0px;
+  }
+
+  #page-switch {
+    margin: 2px auto;
+    padding: 1.5px 3px;
+    bottom: 6px;
+  }
+
+  .toolbtns {
+    width: 275px;
+    bottom: -205px;
   }
 }
