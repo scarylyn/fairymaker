@@ -1,20 +1,20 @@
 // Image Arrays
 const backgrounds = [
-  "../images/dollbckgnd0.png",
-  "../images/dollbckgnd1.png",
-  "../images/dollbckgnd2.png",
-  "../images/dollbckgnd3.png",
-  "../images/dollbckgnd4.png",
+  "dollbckgnd0.png",
+  "dollbckgnd1.png",
+  "dollbckgnd2.png",
+  "dollbckgnd3.png",
+  "dollbckgnd4.png",
 ];
 
 const wings = [
-  "../images/wing-dm001.png",
-  "../images/wing-dm002.png",
-  "../images/wing-dm003.png",
-  "../images/wing-dm004.png",
-  "../images/wing-dm005.png",
-  "../images/wing-dm006.png",
-  "../images/wing-dm007.png",
+  "wing-dm001.png",
+  "wing-dm002.png",
+  "wing-dm003.png",
+  "wing-dm004.png",
+  "wing-dm005.png",
+  "wing-dm006.png",
+  "wing-dm007.png",
 ];
 
 const body = [
