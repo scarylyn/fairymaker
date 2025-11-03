@@ -4,6 +4,8 @@
 @import url(../css/fairy-weather.css);
 
 body {
+  cursor: url(https://cur.cursors-4u.net/cursors/cur-3/cur242.ani),
+    url(https://cur.cursors-4u.net/cursors/cur-3/cur242.png), auto !important;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -99,6 +101,8 @@ body {
 }
 
 #page-switch:hover {
+  cursor: url(https://cur.cursors-4u.net/cursors/cur-3/cur243.ani),
+    url(https://cur.cursors-4u.net/cursors/cur-3/cur243.png), auto !important;
   box-shadow: 0 5px 12px rgba(169, 64, 100, 0.4);
   transform: translateY(-2px);
   background: linear-gradient(135deg, #ffb3c6 0%, #ff99b3 100%);

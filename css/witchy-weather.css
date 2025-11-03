@@ -57,6 +57,8 @@ input:focus {
 }
 
 .weather-search:hover {
+  cursor: url(https://cur.cursors-4u.net/cursors/cur-3/cur240.ani),
+    url(https://cur.cursors-4u.net/cursors/cur-3/cur240.png), auto !important;
   background: linear-gradient(135deg, #c8a2e0 0%, #8b48d7 100%);
   box-shadow: 0 5px 12px rgba(139, 72, 215, 0.5);
   transform: translateY(-2px);
@@ -103,6 +105,7 @@ input:focus {
   flex: 1;
   max-width: 100%;
   justify-content: flex-start;
+  scrollbar-width: thin;
 }
 
 .hourly-item {
