@@ -87,7 +87,7 @@ const accent = [
 ];
 
 // Background Functions
-let bckgndIndex = 0;
+let bckgndIndex = 1;
 
 function showBckgnd(index) {
   if (index >= 0 && index < witchyBackground.length) {
@@ -117,7 +117,7 @@ function previousBckgnd() {
 }
 
 // Pet Functions
-let petIndex = 0;
+let petIndex = 1;
 
 function showPet(index) {
   if (index >= 0 && index < pet.length) {
@@ -147,7 +147,7 @@ function previousPet() {
 }
 
 // Body Functions
-let bodyIndex = 0;
+let bodyIndex = 15;
 
 function showBody(index) {
   if (index >= 0 && index < body.length) {
@@ -177,7 +177,7 @@ function previousBody() {
 }
 
 // Hair Functions
-let hairIndex = 0;
+let hairIndex = 1;
 
 function showHair(index) {
   if (index >= 0 && index < hair.length) {
@@ -207,7 +207,7 @@ function previousHair() {
 }
 
 // Dress Functions
-let dressIndex = 0;
+let dressIndex = 2;
 
 function showDress(index) {
   if (index >= 0 && index < dress.length) {

@@ -90,7 +90,7 @@ function previousBckgnd() {
 }
 
 // Wings Functions
-let wingsIndex = 0;
+let wingsIndex = 2;
 
 function showWings(index) {
   if (index >= 0 && index < wings.length) {
@@ -120,7 +120,7 @@ function previousWings() {
 }
 
 // Body Functions
-let bodyIndex = 0;
+let bodyIndex = 2;
 
 function showBody(index) {
   if (index >= 0 && index < body.length) {
@@ -150,7 +150,7 @@ function previousBody() {
 }
 
 // Hair Functions
-let hairIndex = 0;
+let hairIndex = 1;
 
 function showHair(index) {
   if (index >= 0 && index < hair.length) {
@@ -240,7 +240,7 @@ function previousShoes() {
 }
 
 // Accent Functions
-let accentIndex = 0;
+let accentIndex = 1;
 
 function showAccent(index) {
   if (index >= 0 && index < accent.length) {
