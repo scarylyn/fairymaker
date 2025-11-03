@@ -1,21 +1,21 @@
 window.onload = init;
 
 function init() {
-  const savedWeather = JSON.parse(localStorage.getItem("savedWeather"));
-  const savedForecast = JSON.parse(localStorage.getItem("savedForecast"));
+  const savedWeather = JSON.parse(sessionStorage.getItem("savedWeather"));
+  const savedForecast = JSON.parse(sessionStorage.getItem("savedForecast"));
 
   if (savedWeather && savedForecast) {
     displayWeather(savedWeather);
     displayHourlyForecast(savedForecast);
   }
 
-  showBckgnd(JSON.parse(localStorage.getItem("background")));
-  showWings(JSON.parse(localStorage.getItem("wings")));
-  showBody(JSON.parse(localStorage.getItem("body")));
-  showHair(JSON.parse(localStorage.getItem("hair")));
-  showDress(JSON.parse(localStorage.getItem("dress")));
-  showShoes(JSON.parse(localStorage.getItem("shoes")));
-  showAccent(JSON.parse(localStorage.getItem("accent")));
+  showBckgnd(JSON.parse(sessionStorage.getItem("background")));
+  showWings(JSON.parse(sessionStorage.getItem("wings")));
+  showBody(JSON.parse(sessionStorage.getItem("body")));
+  showHair(JSON.parse(sessionStorage.getItem("hair")));
+  showDress(JSON.parse(sessionStorage.getItem("dress")));
+  showShoes(JSON.parse(sessionStorage.getItem("shoes")));
+  showAccent(JSON.parse(sessionStorage.getItem("accent")));
   console.log("Window has loaded");
 }
 
@@ -36,7 +36,7 @@ function getWeather() {
     .then((response) => response.json())
     .then((data) => {
       displayWeather(data);
-      localStorage.setItem("savedWeather", JSON.stringify(data));
+      sessionStorage.setItem("savedWeather", JSON.stringify(data));
     })
     .catch((error) => {
       console.error("Error fetching current weather data:", error);
@@ -47,7 +47,7 @@ function getWeather() {
     .then((response) => response.json())
     .then((data) => {
       displayHourlyForecast(data.list);
-      localStorage.setItem("savedForecast", JSON.stringify(data.list));
+      sessionStorage.setItem("savedForecast", JSON.stringify(data.list));
     })
     .catch((error) => {
       console.error("Error fetching hourly forecast data:", error);
@@ -121,7 +121,7 @@ function showImage() {
 function resetPage() {
   const input = document.getElementById("city");
   input.value = "";
-  localStorage.clear();
+  sessionStorage.clear();
   location.reload();
 }
 

@@ -1,20 +1,20 @@
 window.onload = init;
 
 function init() {
-  const savedWeather = JSON.parse(localStorage.getItem("savedWeather"));
-  const savedForecast = JSON.parse(localStorage.getItem("savedForecast"));
+  const savedWeather = JSON.parse(sessionStorage.getItem("savedWeather"));
+  const savedForecast = JSON.parse(sessionStorage.getItem("savedForecast"));
 
   if (savedWeather && savedForecast) {
     displayWeather(savedWeather);
     displayHourlyForecast(savedForecast);
   }
 
-  showBckgnd(JSON.parse(localStorage.getItem("witchybckgnd")));
-  showPet(JSON.parse(localStorage.getItem("witchypet")));
-  showBody(JSON.parse(localStorage.getItem("witchybody")));
-  showHair(JSON.parse(localStorage.getItem("witchyhair")));
-  showDress(JSON.parse(localStorage.getItem("witchydress")));
-  showAccent(JSON.parse(localStorage.getItem("witchyaccent")));
+  showBckgnd(JSON.parse(sessionStorage.getItem("witchybckgnd")));
+  showPet(JSON.parse(sessionStorage.getItem("witchypet")));
+  showBody(JSON.parse(sessionStorage.getItem("witchybody")));
+  showHair(JSON.parse(sessionStorage.getItem("witchyhair")));
+  showDress(JSON.parse(sessionStorage.getItem("witchydress")));
+  showAccent(JSON.parse(sessionStorage.getItem("witchyaccent")));
   console.log("Window has loaded");
 }
 
@@ -35,7 +35,7 @@ function getWeather() {
     .then((response) => response.json())
     .then((data) => {
       displayWeather(data);
-      localStorage.setItem("savedWeather", JSON.stringify(data));
+      sessionStorage.setItem("savedWeather", JSON.stringify(data));
     })
     .catch((error) => {
       console.error("Error fetching current weather data:", error);
@@ -46,7 +46,7 @@ function getWeather() {
     .then((response) => response.json())
     .then((data) => {
       displayHourlyForecast(data.list);
-      localStorage.setItem("savedForecast", JSON.stringify(data.list));
+      sessionStorage.setItem("savedForecast", JSON.stringify(data.list));
     })
     .catch((error) => {
       console.error("Error fetching hourly forecast data:", error);
@@ -120,7 +120,7 @@ function showImage() {
 function resetPage() {
   const input = document.getElementById("city");
   input.value = "";
-  localStorage.clear();
+  sessionStorage.clear();
   location.reload();
 }
 

@@ -94,7 +94,7 @@ function showBckgnd(index) {
     let bckgndEl = document.getElementById("witchybckgnd");
     bckgndEl.src = witchyBackground[index];
     bckgndIndex = index;
-    localStorage.setItem("witchybckgnd", JSON.stringify(index));
+    sessionStorage.setItem("witchybckgnd", JSON.stringify(index));
   }
 }
 
@@ -118,7 +118,7 @@ function showPet(index) {
     let petEl = document.getElementById("witchypet");
     petEl.src = pet[index];
     petIndex = index;
-    localStorage.setItem("witchypet", JSON.stringify(index));
+    sessionStorage.setItem("witchypet", JSON.stringify(index));
   }
 }
 
@@ -142,7 +142,7 @@ function showBody(index) {
     let bodyEl = document.getElementById("witchybody");
     bodyEl.src = body[index];
     bodyIndex = index;
-    localStorage.setItem("witchybody", JSON.stringify(index));
+    sessionStorage.setItem("witchybody", JSON.stringify(index));
   }
 }
 
@@ -166,7 +166,7 @@ function showHair(index) {
     let hairEl = document.getElementById("witchyhair");
     hairEl.src = hair[index];
     hairIndex = index;
-    localStorage.setItem("witchyhair", JSON.stringify(index));
+    sessionStorage.setItem("witchyhair", JSON.stringify(index));
   }
 }
 
@@ -190,7 +190,7 @@ function showDress(index) {
     let dressEl = document.getElementById("witchydress");
     dressEl.src = dress[index];
     dressIndex = index;
-    localStorage.setItem("witchydress", JSON.stringify(index));
+    sessionStorage.setItem("witchydress", JSON.stringify(index));
   }
 }
 
@@ -214,7 +214,7 @@ function showAccent(index) {
     let accentEl = document.getElementById("witchyaccent");
     accentEl.src = accent[index];
     accentIndex = index;
-    localStorage.setItem("witchyaccent", JSON.stringify(index));
+    sessionStorage.setItem("witchyaccent", JSON.stringify(index));
   }
 }
 
