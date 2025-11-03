@@ -229,3 +229,34 @@ function previousAccent() {
     showAccent(accentIndex - 1);
   }
 }
+
+// Reset Button
+function resetPage() {
+  const input = document.getElementById("city");
+  input.value = "";
+  sessionStorage.clear();
+  location.reload();
+}
+
+// Hide Button
+function hideButtons() {
+  const hiddenBtns = document.getElementsByClassName("btn");
+  const titleChange = document.getElementById("pagetitle");
+  for (let i = 0; i < hiddenBtns.length; i++) {
+    if (hiddenBtns[i].style.display === "none") {
+      hiddenBtns[i].style.display = "block";
+      titleChange.innerHTML = `Create Your Weather Witch`;
+    } else {
+      hiddenBtns[i].style.display = "none";
+      titleChange.innerHTML = `The Weather Witch`;
+    }
+  }
+
+  // Toggle button text
+  const hideBtn = document.getElementById("hide");
+  if (hideBtn.textContent === "Hide Buttons") {
+    hideBtn.textContent = "Show Buttons";
+  } else {
+    hideBtn.textContent = "Hide Buttons";
+  }
+}

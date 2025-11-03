@@ -58,11 +58,44 @@
   pointer-events: auto;
 }
 
+#page-switch {
+  text-decoration: none;
+  position: absolute;
+  bottom: -182px;
+  font-family: "Lacquer";
+  font-style: normal;
+  font-weight: 400;
+  cursor: pointer;
+  border-radius: 22px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  background: linear-gradient(135deg, #ead1ff 0%, #e3b3ff 100%);
+  text-align: center;
+  padding: 6px 12px;
+  font-size: 12px;
+  box-shadow: 0 3px 8px rgba(169, 64, 100, 0.2);
+  transition: all 0.3s ease;
+  color: #8b48d7;
+}
+
+#page-switch:hover {
+  cursor: url(https://cur.cursors-4u.net/cursors/cur-3/cur240.ani),
+    url(https://cur.cursors-4u.net/cursors/cur-3/cur240.png), auto !important;
+  box-shadow: 0 5px 12px rgba(169, 64, 100, 0.4);
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #e3b3ff 0%, #da99ff 100%);
+}
+
 @media screen and (max-width: 627px) {
   .btn,
   .hidebtn {
     margin: 2px auto;
     padding: 3px 6px;
+  }
+
+  #page-switch {
+    margin: 2px auto;
+    padding: 3px 6px;
+    bottom: 6px;
   }
 
   .btn-column-prev,

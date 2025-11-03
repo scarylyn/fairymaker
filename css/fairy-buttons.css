@@ -58,6 +58,35 @@
   pointer-events: auto;
 }
 
+#page-switch {
+  text-decoration: none;
+  font-family: "DeliusSwashCaps";
+  font-style: normal;
+  font-weight: 400;
+  border-radius: 22px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  background: linear-gradient(135deg, #ffd1dc 0%, #ffb3c6 100%);
+  text-align: center;
+  padding: 6px 12px;
+  font-size: 12px;
+  box-shadow: 0 3px 8px rgba(169, 64, 100, 0.2);
+  transition: all 0.3s ease;
+  color: #a94064;
+}
+
+#page-switch:hover {
+  cursor: url(https://cur.cursors-4u.net/cursors/cur-3/cur243.ani),
+    url(https://cur.cursors-4u.net/cursors/cur-3/cur243.png), auto !important;
+  box-shadow: 0 5px 12px rgba(169, 64, 100, 0.4);
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #ffb3c6 0%, #ff99b3 100%);
+}
+
+.toolbtns {
+  position: absolute;
+  bottom: -185px;
+}
+
 @media screen and (max-width: 627px) {
   .btn,
   .hidebtn {
@@ -68,5 +97,15 @@
   .btn-column-prev,
   .btn-column-next {
     gap: 0px;
+  }
+
+  #page-switch {
+    margin: 2px auto;
+    padding: 3px 6px;
+    bottom: 6px;
+  }
+
+  .toolbtns {
+    bottom: -225px;
   }
 }
