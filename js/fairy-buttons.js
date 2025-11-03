@@ -1,62 +1,62 @@
 // Image Arrays
 const backgrounds = [
-  "dollbckgnd0.png",
-  "dollbckgnd1.png",
-  "dollbckgnd2.png",
-  "dollbckgnd3.png",
-  "dollbckgnd4.png",
+  "images/dollbckgnd0.png",
+  "images/dollbckgnd1.png",
+  "images/dollbckgnd2.png",
+  "images/dollbckgnd3.png",
+  "images/dollbckgnd4.png",
 ];
 
 const wings = [
-  "wing-dm001.png",
-  "wing-dm002.png",
-  "wing-dm003.png",
-  "wing-dm004.png",
-  "wing-dm005.png",
-  "wing-dm006.png",
-  "wing-dm007.png",
+  "images/wing-dm001.png",
+  "images/wing-dm002.png",
+  "images/wing-dm003.png",
+  "images/wing-dm004.png",
+  "images/wing-dm005.png",
+  "images/wing-dm006.png",
+  "images/wing-dm007.png",
 ];
 
 const body = [
-  "../images/Samantha_Base-13.png",
-  "../images/Samantha_Base13a.png",
-  "../images/Samantha_Base13c.png",
-  "../images/Samantha_Base13d.png",
-  "../images/Samantha_Base-13e.png",
-  "../images/Samantha_Base13f.png",
-  "../images/Samantha_Base13g.png",
-  "../images/Samantha_Base-14.png",
-  "../images/Samantha_Base-15.png",
+  "images/Samantha_Base-13.png",
+  "images/Samantha_Base13a.png",
+  "images/Samantha_Base13c.png",
+  "images/Samantha_Base13d.png",
+  "images/Samantha_Base-13e.png",
+  "images/Samantha_Base13f.png",
+  "images/Samantha_Base13g.png",
+  "images/Samantha_Base-14.png",
+  "images/Samantha_Base-15.png",
 ];
 
 const hair = [
-  "../images/hair-dm022.png",
-  "../images/hair-dm023.png",
-  "../images/hair-dm024.png",
-  "../images/hair-dm025.png",
-  "../images/hair-dm026.png",
-  "../images/hair-dm027.png",
+  "images/hair-dm022.png",
+  "images/hair-dm023.png",
+  "images/hair-dm024.png",
+  "images/hair-dm025.png",
+  "images/hair-dm026.png",
+  "images/hair-dm027.png",
 ];
 
 const dress = [
-  "../images/dress-dm005.png",
-  "../images/dress-dm006.png",
-  "../images/dress-dm007.png",
-  "../images/dress-dm008.png",
+  "images/dress-dm005.png",
+  "images/dress-dm006.png",
+  "images/dress-dm007.png",
+  "images/dress-dm008.png",
 ];
 
 const shoes = [
-  "../images/shoe-dm004.png",
-  "../images/shoe-dm005.png",
-  "../images/shoe-dm006.png",
-  "../images/shoe-dm007.png",
+  "images/shoe-dm004.png",
+  "images/shoe-dm005.png",
+  "images/shoe-dm006.png",
+  "images/shoe-dm007.png",
 ];
 
 const accent = [
-  "../images/acc-dm058.png",
-  "../images/acc-dm062.png",
-  "../images/acc-dm069.png",
-  "../images/blank.png",
+  "images/acc-dm058.png",
+  "images/acc-dm062.png",
+  "images/acc-dm069.png",
+  "images/blank.png",
 ];
 
 // Background Functions
