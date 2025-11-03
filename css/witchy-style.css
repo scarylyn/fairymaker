@@ -1,7 +1,7 @@
 @import url(../css/normalize.css);
-@import url(../css/fairy-buttons.css);
+@import url(../css/witchy-buttons.css);
 @import url(../css/fonts.css);
-@import url(../css/fairy-weather.css);
+@import url(../css/witchy-weather.css);
 
 body {
   display: flex;
@@ -11,7 +11,7 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 20px;
-  background: linear-gradient(135deg, #e75480 0%, #d64a7a 50%, #e75480 100%);
+  background: linear-gradient(135deg, #6f29ac 0%, #8230c9 50%, #934ad3 100%);
   background-size: 200% 200%;
   animation: gradient-shift 15s ease infinite;
   box-sizing: border-box;
@@ -30,13 +30,13 @@ body {
 }
 
 #pagetitle {
-  font-family: "Bonbon";
+  font-family: "Flavors";
   font-style: normal;
   font-weight: 400;
-  color: #ffd1dc;
+  color: #f0d1ff;
   font-size: 2.5em;
-  text-shadow: 3px 3px 6px rgba(169, 64, 100, 0.5),
-    0 0 20px rgba(255, 209, 220, 0.4);
+  text-shadow: 3px 3px 6px rgba(145, 64, 169, 0.5),
+    0 0 20px rgba(242, 209, 255, 0.4);
   letter-spacing: 2px;
   margin: 0 0 5px 0;
   text-align: center;
@@ -57,21 +57,20 @@ body {
   background-size: cover;
   background-image: url("../images/bg-dm030.png");
   border-radius: 15px;
-  box-shadow: 0 6px 24px rgba(169, 64, 100, 0.3),
+  box-shadow: 0 6px 24px rgba(136, 64, 169, 0.3),
     0 0 0 2px rgba(255, 255, 255, 0.5);
   border: 2px solid rgba(255, 255, 255, 0.6);
   width: 247px;
   height: 247px;
 }
 
-#accent,
 #dollarea,
-#dollbody,
-#dollbckgnd,
-#dress,
-#hair,
-#shoes,
-#wings {
+#witchybody,
+#witchybckgnd,
+#witchydress,
+#witchyhair,
+#witchypet,
+#witchyaccent {
   position: absolute;
   width: 247px;
   height: 247px;
@@ -83,25 +82,25 @@ body {
   text-decoration: none;
   position: absolute;
   bottom: 12px;
-  font-family: "DeliusSwashCaps";
+  font-family: "Lacquer";
   font-style: normal;
   font-weight: 400;
   cursor: pointer;
   border-radius: 22px;
   border: 2px solid rgba(255, 255, 255, 0.6);
-  background: linear-gradient(135deg, #ffd1dc 0%, #ffb3c6 100%);
+  background: linear-gradient(135deg, #ead1ff 0%, #e3b3ff 100%);
   text-align: center;
   padding: 6px 12px;
   font-size: 12px;
   box-shadow: 0 3px 8px rgba(169, 64, 100, 0.2);
   transition: all 0.3s ease;
-  color: #a94064;
+  color: #8b48d7;
 }
 
 #page-switch:hover {
   box-shadow: 0 5px 12px rgba(169, 64, 100, 0.4);
   transform: translateY(-2px);
-  background: linear-gradient(135deg, #ffb3c6 0%, #ff99b3 100%);
+  background: linear-gradient(135deg, #e3b3ff 0%, #da99ff 100%);
 }
 
 @media screen and (max-width: 627px) {
@@ -122,14 +121,13 @@ body {
     bottom: 6px;
   }
 
-  #accent,
   #dollarea,
-  #dollbody,
-  #dollbckgnd,
-  #dress,
-  #hair,
-  #shoes,
-  #wings {
+  #witchybody,
+  #witchybckgnd,
+  #witchydress,
+  #witchyhair,
+  #witchypet,
+  #witchyaccent {
     width: 175px;
     height: 175px;
   }

@@ -11,3 +11,17 @@
   font-weight: 400;
   src: url("../fonts/DeliusSwashCaps-Regular.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "Flavors";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Flavors-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lacquer";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Lacquer-Regular.ttf") format("truetype");
+}

@@ -18,11 +18,15 @@ const wings = [
 ];
 
 const body = [
+  "../images/Samantha_Base-13.png",
   "../images/Samantha_Base13a.png",
   "../images/Samantha_Base13c.png",
   "../images/Samantha_Base13d.png",
+  "../images/Samantha_Base-13e.png",
   "../images/Samantha_Base13f.png",
   "../images/Samantha_Base13g.png",
+  "../images/Samantha_Base-14.png",
+  "../images/Samantha_Base-15.png",
 ];
 
 const hair = [
