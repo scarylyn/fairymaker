@@ -101,12 +101,18 @@ function showBckgnd(index) {
 function nextBckgnd() {
   if (bckgndIndex < witchyBackground.length - 1) {
     showBckgnd(bckgndIndex + 1);
+  } else {
+    bckgndIndex = 0;
+    showBckgnd(bckgndIndex);
   }
 }
 
 function previousBckgnd() {
   if (bckgndIndex > 0) {
     showBckgnd(bckgndIndex - 1);
+  } else {
+    bckgndIndex = 6;
+    showBckgnd(bckgndIndex);
   }
 }
 
@@ -125,12 +131,18 @@ function showPet(index) {
 function nextPet() {
   if (petIndex < pet.length - 1) {
     showPet(petIndex + 1);
+  } else {
+    petIndex = 0;
+    showPet(petIndex);
   }
 }
 
 function previousPet() {
   if (petIndex > 0) {
     showPet(petIndex - 1);
+  } else {
+    petIndex = 6;
+    showPet(petIndex);
   }
 }
 
@@ -149,12 +161,18 @@ function showBody(index) {
 function nextBody() {
   if (bodyIndex < body.length - 1) {
     showBody(bodyIndex + 1);
+  } else {
+    bodyIndex = 0;
+    showBody(bodyIndex);
   }
 }
 
 function previousBody() {
   if (bodyIndex > 0) {
     showBody(bodyIndex - 1);
+  } else {
+    bodyIndex = 20;
+    showBody(bodyIndex);
   }
 }
 
@@ -173,12 +191,18 @@ function showHair(index) {
 function nextHair() {
   if (hairIndex < hair.length - 1) {
     showHair(hairIndex + 1);
+  } else {
+    hairIndex = 0;
+    showHair(hairIndex);
   }
 }
 
 function previousHair() {
   if (hairIndex > 0) {
     showHair(hairIndex - 1);
+  } else {
+    hairIndex = 23;
+    showHair(hairIndex);
   }
 }
 
@@ -197,12 +221,18 @@ function showDress(index) {
 function nextDress() {
   if (dressIndex < dress.length - 1) {
     showDress(dressIndex + 1);
+  } else {
+    dressIndex = 0;
+    showDress(dressIndex);
   }
 }
 
 function previousDress() {
   if (dressIndex > 0) {
     showDress(dressIndex - 1);
+  } else {
+    dressIndex = 9;
+    showDress(dressIndex);
   }
 }
 
@@ -221,12 +251,18 @@ function showAccent(index) {
 function nextAccent() {
   if (accentIndex < accent.length - 1) {
     showAccent(accentIndex + 1);
+  } else {
+    accentIndex = 0;
+    showAccent(accentIndex);
   }
 }
 
 function previousAccent() {
   if (accentIndex > 0) {
     showAccent(accentIndex - 1);
+  } else {
+    accentIndex = 5;
+    showAccent(accentIndex);
   }
 }
 

@@ -74,12 +74,18 @@ function showBckgnd(index) {
 function nextBckgnd() {
   if (bckgndIndex < backgrounds.length - 1) {
     showBckgnd(bckgndIndex + 1);
+  } else {
+    bckgndIndex = 0;
+    showBckgnd(bckgndIndex);
   }
 }
 
 function previousBckgnd() {
   if (bckgndIndex > 0) {
     showBckgnd(bckgndIndex - 1);
+  } else {
+    bckgndIndex = 5;
+    showBckgnd(bckgndIndex);
   }
 }
 
@@ -98,12 +104,18 @@ function showWings(index) {
 function nextWings() {
   if (wingsIndex < wings.length - 1) {
     showWings(wingsIndex + 1);
+  } else {
+    wingsIndex = 0;
+    showWings(wingsIndex);
   }
 }
 
 function previousWings() {
   if (wingsIndex > 0) {
     showWings(wingsIndex - 1);
+  } else {
+    wingsIndex = 7;
+    showWings(wingsIndex);
   }
 }
 
@@ -122,12 +134,18 @@ function showBody(index) {
 function nextBody() {
   if (bodyIndex < body.length - 1) {
     showBody(bodyIndex + 1);
+  } else {
+    bodyIndex = 0;
+    showBody(bodyIndex);
   }
 }
 
 function previousBody() {
   if (bodyIndex > 0) {
     showBody(bodyIndex - 1);
+  } else {
+    bodyIndex = 9;
+    showBody(bodyIndex);
   }
 }
 
@@ -146,12 +164,18 @@ function showHair(index) {
 function nextHair() {
   if (hairIndex < hair.length - 1) {
     showHair(hairIndex + 1);
+  } else {
+    hairIndex = 0;
+    showHair(hairIndex);
   }
 }
 
 function previousHair() {
   if (hairIndex > 0) {
     showHair(hairIndex - 1);
+  } else {
+    hairIndex = 6;
+    showHair(hairIndex);
   }
 }
 
@@ -170,12 +194,18 @@ function showDress(index) {
 function nextDress() {
   if (dressIndex < dress.length - 1) {
     showDress(dressIndex + 1);
+  } else {
+    dressIndex = 0;
+    showDress(dressIndex);
   }
 }
 
 function previousDress() {
   if (dressIndex > 0) {
     showDress(dressIndex - 1);
+  } else {
+    dressIndex = 4;
+    showDress(dressIndex);
   }
 }
 
@@ -194,12 +224,18 @@ function showShoes(index) {
 function nextShoes() {
   if (shoesIndex < shoes.length - 1) {
     showShoes(shoesIndex + 1);
+  } else {
+    shoesIndex = 0;
+    showShoes(shoesIndex);
   }
 }
 
 function previousShoes() {
   if (shoesIndex > 0) {
     showShoes(shoesIndex - 1);
+  } else {
+    shoesIndex = 4;
+    showShoes(shoesIndex);
   }
 }
 
@@ -218,12 +254,18 @@ function showAccent(index) {
 function nextAccent() {
   if (accentIndex < accent.length - 1) {
     showAccent(accentIndex + 1);
+  } else {
+    accentIndex = 0;
+    showAccent(accentIndex);
   }
 }
 
 function previousAccent() {
   if (accentIndex > 0) {
     showAccent(accentIndex - 1);
+  } else {
+    accentIndex = 4;
+    showAccent(accentIndex);
   }
 }
 
