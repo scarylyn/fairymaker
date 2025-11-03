@@ -17,3 +17,4 @@ Finally there's the favicon icons, which can be found [here](https://favicon.io/
 #### Want to try it out?
 
 Check out the [GitHub Pages Deployment!](https://scarylyn.github.io/fairymaker/index.html) I finally got it working correctly!
+<img src="/images/fairy-sample-no-buttons">
