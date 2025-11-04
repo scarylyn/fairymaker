@@ -9,13 +9,41 @@ function init() {
     displayHourlyForecast(savedForecast);
   }
 
-  showBckgnd(bckgndIndex);
-  showPet(petIndex);
-  showBody(bodyIndex);
-  showHair(hairIndex);
-  showDress(dressIndex);
-  showAccent(accentIndex);
+  checkMemory();
   console.log("Window has loaded");
+}
+
+// Check the Browser memory for user-chosen doll items. If there's none, page will load whatever is in the index.
+function checkMemory() {
+  const savedBckgnd = JSON.parse(localStorage.getItem("witchybckgnd"));
+  const savedPet = JSON.parse(localStorage.getItem("witchypet"));
+  const savedBody = JSON.parse(localStorage.getItem("witchybody"));
+  const savedHair = JSON.parse(localStorage.getItem("witchyhair"));
+  const savedDress = JSON.parse(localStorage.getItem("witchydress"));
+  const savedAccent = JSON.parse(localStorage.getItem("witchyaccent"));
+
+  if (
+    savedBckgnd ||
+    savedPet ||
+    savedBody ||
+    savedHair ||
+    savedDress ||
+    savedAccent
+  ) {
+    showBckgnd(savedBckgnd);
+    showPet(savedPet);
+    showBody(savedBody);
+    showHair(savedHair);
+    showDress(savedDress);
+    showAccent(savedAccent);
+  } else {
+    showBckgnd(bckgndIndex);
+    showPet(petIndex);
+    showBody(bodyIndex);
+    showHair(hairIndex);
+    showDress(dressIndex);
+    showAccent(accentIndex);
+  }
 }
 
 // Weather Functions

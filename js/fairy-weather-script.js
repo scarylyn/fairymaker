@@ -9,14 +9,45 @@ function init() {
     displayHourlyForecast(savedForecast);
   }
 
-  showBckgnd(bckgndIndex);
-  showWings(wingsIndex);
-  showBody(bodyIndex);
-  showHair(hairIndex);
-  showDress(dressIndex);
-  showShoes(shoesIndex);
-  showAccent(accentIndex);
+  checkMemory();
   console.log("Window has loaded");
+}
+
+// Check the Browser memory for user-chosen doll items. If there's none, page will load whatever is in the index.
+function checkMemory() {
+  const savedBckgnd = JSON.parse(localStorage.getItem("fairybckgnd"));
+  const savedWings = JSON.parse(localStorage.getItem("fairywings"));
+  const savedBody = JSON.parse(localStorage.getItem("fairybody"));
+  const savedHair = JSON.parse(localStorage.getItem("fairyhair"));
+  const savedDress = JSON.parse(localStorage.getItem("fairydress"));
+  const savedShoes = JSON.parse(localStorage.getItem("fairyshoes"));
+  const savedAccent = JSON.parse(localStorage.getItem("fairyaccent"));
+
+  if (
+    savedBckgnd ||
+    savedWings ||
+    savedBody ||
+    savedHair ||
+    savedDress ||
+    savedShoes ||
+    savedAccent
+  ) {
+    showBckgnd(savedBckgnd);
+    showWings(savedWings);
+    showBody(savedBody);
+    showHair(savedHair);
+    showDress(savedDress);
+    showShoes(savedShoes);
+    showAccent(savedAccent);
+  } else {
+    showBckgnd(bckgndIndex);
+    showWings(wingsIndex);
+    showBody(bodyIndex);
+    showHair(hairIndex);
+    showDress(dressIndex);
+    showShoes(shoesIndex);
+    showAccent(accentIndex);
+  }
 }
 
 // Weather Functions

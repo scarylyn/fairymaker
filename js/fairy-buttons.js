@@ -68,7 +68,7 @@ function showBckgnd(index) {
     let bckgndEl = document.getElementById("dollbckgnd");
     bckgndEl.src = backgrounds[index];
     bckgndIndex = index;
-    localStorage.setItem("background", JSON.stringify(index));
+    localStorage.setItem("fairybckgnd", JSON.stringify(index));
   }
 }
 
@@ -98,7 +98,7 @@ function showWings(index) {
     let wingsEl = document.getElementById("wings");
     wingsEl.src = wings[index];
     wingsIndex = index;
-    localStorage.setItem("wings", JSON.stringify(index));
+    localStorage.setItem("fairywings", JSON.stringify(index));
   }
 }
 
@@ -128,7 +128,7 @@ function showBody(index) {
     let bodyEl = document.getElementById("dollbody");
     bodyEl.src = body[index];
     bodyIndex = index;
-    localStorage.setItem("body", JSON.stringify(index));
+    localStorage.setItem("fairybody", JSON.stringify(index));
   }
 }
 
@@ -158,7 +158,7 @@ function showHair(index) {
     let hairEl = document.getElementById("hair");
     hairEl.src = hair[index];
     hairIndex = index;
-    localStorage.setItem("hair", JSON.stringify(index));
+    localStorage.setItem("fairyhair", JSON.stringify(index));
   }
 }
 
@@ -188,7 +188,7 @@ function showDress(index) {
     let dressEl = document.getElementById("dress");
     dressEl.src = dress[index];
     dressIndex = index;
-    localStorage.setItem("dress", JSON.stringify(index));
+    localStorage.setItem("fairydress", JSON.stringify(index));
   }
 }
 
@@ -218,7 +218,7 @@ function showShoes(index) {
     let shoesEl = document.getElementById("shoes");
     shoesEl.src = shoes[index];
     shoesIndex = index;
-    localStorage.setItem("shoes", JSON.stringify(index));
+    localStorage.setItem("fairyshoes", JSON.stringify(index));
   }
 }
 
@@ -248,7 +248,7 @@ function showAccent(index) {
     let accentEl = document.getElementById("accent");
     accentEl.src = accent[index];
     accentIndex = index;
-    localStorage.setItem("accent", JSON.stringify(index));
+    localStorage.setItem("fairyaccent", JSON.stringify(index));
   }
 }
 
