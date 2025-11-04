@@ -1,65 +1,66 @@
 // Image Arrays
 const backgrounds = [
-  "images/dollbckgnd0.png",
-  "images/dollbckgnd1.png",
-  "images/dollbckgnd2.png",
-  "images/dollbckgnd3.png",
-  "images/dollbckgnd4.png",
+  // These are the backgrounds for the doll
+  "images/fairy/dollbckgnd0.png",
+  "images/fairy/dollbckgnd1.png",
+  "images/fairy/dollbckgnd2.png",
+  "images/fairy/dollbckgnd3.png",
+  "images/fairy/dollbckgnd4.png",
 ];
 
 const wings = [
-  "images/wing-dm001.png",
-  "images/wing-dm002.png",
-  "images/wing-dm003.png",
-  "images/wing-dm004.png",
-  "images/wing-dm005.png",
-  "images/wing-dm006.png",
-  "images/wing-dm007.png",
+  "images/fairy/wing-dm001.png",
+  "images/fairy/wing-dm002.png",
+  "images/fairy/wing-dm003.png",
+  "images/fairy/wing-dm004.png",
+  "images/fairy/wing-dm005.png",
+  "images/fairy/wing-dm006.png",
+  "images/fairy/wing-dm007.png",
 ];
 
 const body = [
-  "images/Samantha_Base-13.png",
-  "images/Samantha_Base13a.png",
-  "images/Samantha_Base13c.png",
-  "images/Samantha_Base13d.png",
-  "images/Samantha_Base-13e.png",
-  "images/Samantha_Base13f.png",
-  "images/Samantha_Base13g.png",
-  "images/Samantha_Base-14.png",
-  "images/Samantha_Base-15.png",
+  "images/bodies/Samantha_Base-13.png",
+  "images/bodies/Samantha_Base13a.png",
+  "images/bodies/Samantha_Base13c.png",
+  "images/bodies/Samantha_Base13d.png",
+  "images/bodies/Samantha_Base-13e.png",
+  "images/bodies/Samantha_Base13f.png",
+  "images/bodies/Samantha_Base13g.png",
+  "images/bodies/Samantha_Base-14.png",
+  "images/bodies/Samantha_Base-15.png",
 ];
 
 const hair = [
-  "images/hair-dm022.png",
-  "images/hair-dm023.png",
-  "images/hair-dm024.png",
-  "images/hair-dm025.png",
-  "images/hair-dm026.png",
-  "images/hair-dm027.png",
+  "images/fairy/hair-dm022.png",
+  "images/fairy/hair-dm023.png",
+  "images/fairy/hair-dm024.png",
+  "images/fairy/hair-dm025.png",
+  "images/fairy/hair-dm026.png",
+  "images/fairy/hair-dm027.png",
 ];
 
 const dress = [
-  "images/dress-dm005.png",
-  "images/dress-dm006.png",
-  "images/dress-dm007.png",
-  "images/dress-dm008.png",
+  "images/fairy/dress-dm005.png",
+  "images/fairy/dress-dm006.png",
+  "images/fairy/dress-dm007.png",
+  "images/fairy/dress-dm008.png",
 ];
 
 const shoes = [
-  "images/shoe-dm004.png",
-  "images/shoe-dm005.png",
-  "images/shoe-dm006.png",
-  "images/shoe-dm007.png",
+  "images/fairy/shoe-dm004.png",
+  "images/fairy/shoe-dm005.png",
+  "images/fairy/shoe-dm006.png",
+  "images/fairy/shoe-dm007.png",
 ];
 
 const accent = [
-  "images/acc-dm058.png",
-  "images/acc-dm062.png",
-  "images/acc-dm069.png",
+  "images/fairy/acc-dm058.png",
+  "images/fairy/acc-dm062.png",
+  "images/fairy/acc-dm069.png",
   "images/blank.png",
 ];
 
-// Background Functions
+// Doll Background Functions
 let bckgndIndex = 0;
 
 function showBckgnd(index) {
@@ -67,7 +68,7 @@ function showBckgnd(index) {
     let bckgndEl = document.getElementById("dollbckgnd");
     bckgndEl.src = backgrounds[index];
     bckgndIndex = index;
-    sessionStorage.setItem("background", JSON.stringify(index));
+    localStorage.setItem("background", JSON.stringify(index));
   }
 }
 
@@ -97,7 +98,7 @@ function showWings(index) {
     let wingsEl = document.getElementById("wings");
     wingsEl.src = wings[index];
     wingsIndex = index;
-    sessionStorage.setItem("wings", JSON.stringify(index));
+    localStorage.setItem("wings", JSON.stringify(index));
   }
 }
 
@@ -127,7 +128,7 @@ function showBody(index) {
     let bodyEl = document.getElementById("dollbody");
     bodyEl.src = body[index];
     bodyIndex = index;
-    sessionStorage.setItem("body", JSON.stringify(index));
+    localStorage.setItem("body", JSON.stringify(index));
   }
 }
 
@@ -157,7 +158,7 @@ function showHair(index) {
     let hairEl = document.getElementById("hair");
     hairEl.src = hair[index];
     hairIndex = index;
-    sessionStorage.setItem("hair", JSON.stringify(index));
+    localStorage.setItem("hair", JSON.stringify(index));
   }
 }
 
@@ -187,7 +188,7 @@ function showDress(index) {
     let dressEl = document.getElementById("dress");
     dressEl.src = dress[index];
     dressIndex = index;
-    sessionStorage.setItem("dress", JSON.stringify(index));
+    localStorage.setItem("dress", JSON.stringify(index));
   }
 }
 
@@ -217,7 +218,7 @@ function showShoes(index) {
     let shoesEl = document.getElementById("shoes");
     shoesEl.src = shoes[index];
     shoesIndex = index;
-    sessionStorage.setItem("shoes", JSON.stringify(index));
+    localStorage.setItem("shoes", JSON.stringify(index));
   }
 }
 
@@ -247,7 +248,7 @@ function showAccent(index) {
     let accentEl = document.getElementById("accent");
     accentEl.src = accent[index];
     accentIndex = index;
-    sessionStorage.setItem("accent", JSON.stringify(index));
+    localStorage.setItem("accent", JSON.stringify(index));
   }
 }
 
@@ -273,7 +274,7 @@ function previousAccent() {
 function resetPage() {
   const input = document.getElementById("city");
   input.value = "";
-  sessionStorage.clear();
+  localStorage.clear();
   location.reload();
 }
 

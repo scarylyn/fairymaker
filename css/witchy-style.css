@@ -13,21 +13,30 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 20px;
-  background: linear-gradient(135deg, #6f29ac 0%, #8230c9 50%, #934ad3 100%);
-  background-size: 200% 200%;
-  animation: gradient-shift 15s ease infinite;
+  background: #6f29ac;
+  background: linear-gradient(
+    150deg,
+    rgba(111, 41, 172, 1) 0%,
+    rgba(130, 48, 201, 1) 50%,
+    rgba(147, 74, 211, 1) 100%
+  );
+  background-size: 165% 165%;
   box-sizing: border-box;
 }
 
-@keyframes gradient-shift {
-  0% {
-    background-position: 0% 50%;
+#animated-area {
+  background-image: url("/images/bckgnd-aurora-2.jpg");
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+  animation: img-slide 100s linear infinite alternate;
+}
+
+@keyframes img-slide {
+  from {
+    background-position: 0 0;
   }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
+  to {
+    background-position: 100% 0;
   }
 }
 
@@ -57,7 +66,6 @@ body {
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../images/bg-dm030.png");
   border-radius: 15px;
   box-shadow: 0 6px 24px rgba(136, 64, 169, 0.3),
     0 0 0 2px rgba(255, 255, 255, 0.5);
@@ -81,6 +89,10 @@ body {
 }
 
 @media screen and (max-width: 627px) {
+  body {
+    background-size: 200% 200%;
+  }
+
   #pagetitle {
     font-size: 30px;
     max-width: 550px;

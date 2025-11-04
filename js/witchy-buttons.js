@@ -1,92 +1,93 @@
 // Image Arrays
 const witchyBackground = [
-  "images/bg-dm-1.png",
-  "images/bg-dm-2.png",
-  "images/bg-dm-3.png",
-  "images/bg-dm-4.png",
-  "images/bg-dm-5.png",
-  "images/bg-dm-6.png",
+  // These are the backgrounds for the doll
+  "images/witchy/bg-dm-1.png",
+  "images/witchy/bg-dm-2.png",
+  "images/witchy/bg-dm-3.png",
+  "images/witchy/bg-dm-4.png",
+  "images/witchy/bg-dm-5.png",
+  "images/witchy/bg-dm-6.png",
 ];
 
 const body = [
-  "images/Samantha_Base-13.png",
-  "images/Samantha_Base13a.png",
-  "images/Samantha_Base13c.png",
-  "images/Samantha_Base13d.png",
-  "images/Samantha_Base-13e.png",
-  "images/Samantha_Base13f.png",
-  "images/Samantha_Base13g.png",
-  "images/Samantha_Base-14.png",
-  "images/Samantha_Base-15.png",
-  "images/Samantha_Base-17.png",
-  "images/Samantha_Base-18.png",
-  "images/Samantha_Base-19.png",
-  "images/Samantha_Base-20.png",
-  "images/Samantha_Base-21.png",
-  "images/Samantha_Base-22.png",
-  "images/Samantha_Base-23.png",
-  "images/Samantha_Base-24.png",
-  "images/Samantha_Base-25.png",
-  "images/Samantha_Base-26.png",
-  "images/Samantha_Base-27.png",
+  "images/bodies/Samantha_Base-13.png",
+  "images/bodies/Samantha_Base13a.png",
+  "images/bodies/Samantha_Base13c.png",
+  "images/bodies/Samantha_Base13d.png",
+  "images/bodies/Samantha_Base-13e.png",
+  "images/bodies/Samantha_Base13f.png",
+  "images/bodies/Samantha_Base13g.png",
+  "images/bodies/Samantha_Base-14.png",
+  "images/bodies/Samantha_Base-15.png",
+  "images/bodies/Samantha_Base-17.png",
+  "images/bodies/Samantha_Base-18.png",
+  "images/bodies/Samantha_Base-19.png",
+  "images/bodies/Samantha_Base-20.png",
+  "images/bodies/Samantha_Base-21.png",
+  "images/bodies/Samantha_Base-22.png",
+  "images/bodies/Samantha_Base-23.png",
+  "images/bodies/Samantha_Base-24.png",
+  "images/bodies/Samantha_Base-25.png",
+  "images/bodies/Samantha_Base-26.png",
+  "images/bodies/Samantha_Base-27.png",
 ];
 
 const hair = [
-  "images/hair-long-1.png",
-  "images/hair-long-2.png",
-  "images/hair-long-3.png",
-  "images/hair-long-4.png",
-  "images/hair-long-5.png",
-  "images/hair-short-1.png",
-  "images/hair-short-2.png",
-  "images/hair-short-3.png",
-  "images/hair-short-4.png",
-  "images/hair-short-5.png",
-  "images/hair-short-6.png",
-  "images/witch-blue-1.png",
-  "images/witch-blue-2.png",
-  "images/witch-blue-3.png",
-  "images/witch-pink-1.png",
-  "images/witch-pink-2.png",
-  "images/witch-pink-3.png",
-  "images/witch-red-1.png",
-  "images/witch-red-2.png",
-  "images/witch-red-3.png",
-  "images/witch-sage-1.png",
-  "images/witch-sage-2.png",
-  "images/witch-sage-3.png",
+  "images/witchy/hair-long-1.png",
+  "images/witchy/hair-long-2.png",
+  "images/witchy/hair-long-3.png",
+  "images/witchy/hair-long-4.png",
+  "images/witchy/hair-long-5.png",
+  "images/witchy/hair-short-1.png",
+  "images/witchy/hair-short-2.png",
+  "images/witchy/hair-short-3.png",
+  "images/witchy/hair-short-4.png",
+  "images/witchy/hair-short-5.png",
+  "images/witchy/hair-short-6.png",
+  "images/witchy/witch-blue-1.png",
+  "images/witchy/witch-blue-2.png",
+  "images/witchy/witch-blue-3.png",
+  "images/witchy/witch-pink-1.png",
+  "images/witchy/witch-pink-2.png",
+  "images/witchy/witch-pink-3.png",
+  "images/witchy/witch-red-1.png",
+  "images/witchy/witch-red-2.png",
+  "images/witchy/witch-red-3.png",
+  "images/witchy/witch-sage-1.png",
+  "images/witchy/witch-sage-2.png",
+  "images/witchy/witch-sage-3.png",
 ];
 
 const dress = [
-  "images/dress-1.png",
-  "images/dress-2.png",
-  "images/dress-3.png",
-  "images/dress-4.png",
-  "images/cloak-1.png",
-  "images/cloak-2.png",
-  "images/cloak-3.png",
-  "images/cloak-4.png",
-  "images/cloak-5.png",
+  "images/witchy/dress-1.png",
+  "images/witchy/dress-2.png",
+  "images/witchy/dress-3.png",
+  "images/witchy/dress-4.png",
+  "images/witchy/cloak-1.png",
+  "images/witchy/cloak-2.png",
+  "images/witchy/cloak-3.png",
+  "images/witchy/cloak-4.png",
+  "images/witchy/cloak-5.png",
 ];
 
 const pet = [
-  "images/pet-cat-black-1.png",
-  "images/pet-cat-black-2.png",
-  "images/pet-cat-brown-1.png",
-  "images/pet-cat-brown-2.png",
-  "images/pet-cat-white-1.png",
-  "images/pet-cat-white-2.png",
+  "images/witchy/pet-cat-black-1.png",
+  "images/witchy/pet-cat-black-2.png",
+  "images/witchy/pet-cat-brown-1.png",
+  "images/witchy/pet-cat-brown-2.png",
+  "images/witchy/pet-cat-white-1.png",
+  "images/witchy/pet-cat-white-2.png",
 ];
 
 const accent = [
-  "images/accent-cauldron.png",
-  "images/accent-potion-1.png",
-  "images/accent-potion-2.png",
-  "images/accent-potion-3.png",
+  "images/witchy/accent-cauldron.png",
+  "images/witchy/accent-potion-1.png",
+  "images/witchy/accent-potion-2.png",
+  "images/witchy/accent-potion-3.png",
   "images/blank.png",
 ];
 
-// Background Functions
+// Doll Background Functions
 let bckgndIndex = 1;
 
 function showBckgnd(index) {
@@ -94,7 +95,7 @@ function showBckgnd(index) {
     let bckgndEl = document.getElementById("witchybckgnd");
     bckgndEl.src = witchyBackground[index];
     bckgndIndex = index;
-    sessionStorage.setItem("witchybckgnd", JSON.stringify(index));
+    localStorage.setItem("witchybckgnd", JSON.stringify(index));
   }
 }
 
@@ -124,7 +125,7 @@ function showPet(index) {
     let petEl = document.getElementById("witchypet");
     petEl.src = pet[index];
     petIndex = index;
-    sessionStorage.setItem("witchypet", JSON.stringify(index));
+    localStorage.setItem("witchypet", JSON.stringify(index));
   }
 }
 
@@ -154,7 +155,7 @@ function showBody(index) {
     let bodyEl = document.getElementById("witchybody");
     bodyEl.src = body[index];
     bodyIndex = index;
-    sessionStorage.setItem("witchybody", JSON.stringify(index));
+    localStorage.setItem("witchybody", JSON.stringify(index));
   }
 }
 
@@ -184,7 +185,7 @@ function showHair(index) {
     let hairEl = document.getElementById("witchyhair");
     hairEl.src = hair[index];
     hairIndex = index;
-    sessionStorage.setItem("witchyhair", JSON.stringify(index));
+    localStorage.setItem("witchyhair", JSON.stringify(index));
   }
 }
 
@@ -214,7 +215,7 @@ function showDress(index) {
     let dressEl = document.getElementById("witchydress");
     dressEl.src = dress[index];
     dressIndex = index;
-    sessionStorage.setItem("witchydress", JSON.stringify(index));
+    localStorage.setItem("witchydress", JSON.stringify(index));
   }
 }
 
@@ -244,7 +245,7 @@ function showAccent(index) {
     let accentEl = document.getElementById("witchyaccent");
     accentEl.src = accent[index];
     accentIndex = index;
-    sessionStorage.setItem("witchyaccent", JSON.stringify(index));
+    localStorage.setItem("witchyaccent", JSON.stringify(index));
   }
 }
 
@@ -270,7 +271,7 @@ function previousAccent() {
 function resetPage() {
   const input = document.getElementById("city");
   input.value = "";
-  sessionStorage.clear();
+  localStorage.clear();
   location.reload();
 }
 

@@ -1,8 +1,8 @@
 window.onload = init;
 
 function init() {
-  const savedWeather = JSON.parse(sessionStorage.getItem("savedWeather"));
-  const savedForecast = JSON.parse(sessionStorage.getItem("savedForecast"));
+  const savedWeather = JSON.parse(localStorage.getItem("savedWeather"));
+  const savedForecast = JSON.parse(localStorage.getItem("savedForecast"));
 
   if (savedWeather && savedForecast) {
     displayWeather(savedWeather);
@@ -35,7 +35,7 @@ function getWeather() {
     .then((response) => response.json())
     .then((data) => {
       displayWeather(data);
-      sessionStorage.setItem("savedWeather", JSON.stringify(data));
+      localStorage.setItem("savedWeather", JSON.stringify(data));
     })
     .catch((error) => {
       console.error("Error fetching current weather data:", error);
@@ -46,7 +46,7 @@ function getWeather() {
     .then((response) => response.json())
     .then((data) => {
       displayHourlyForecast(data.list);
-      sessionStorage.setItem("savedForecast", JSON.stringify(data.list));
+      localStorage.setItem("savedForecast", JSON.stringify(data.list));
     })
     .catch((error) => {
       console.error("Error fetching hourly forecast data:", error);

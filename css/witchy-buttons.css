@@ -42,22 +42,6 @@
   background: linear-gradient(135deg, #e3b3ff 0%, #da99ff 100%);
 }
 
-.btn-column-prev {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 4px;
-  pointer-events: auto;
-}
-
-.btn-column-next {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 4px;
-  pointer-events: auto;
-}
-
 #page-switch {
   text-decoration: none;
   font-family: "Lacquer";
@@ -88,16 +72,27 @@
   bottom: -190px;
 }
 
+.btn-column-prev {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  pointer-events: auto;
+}
+
+.btn-column-next {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  pointer-events: auto;
+}
+
 @media screen and (max-width: 627px) {
   .btn,
   .hidebtn {
     margin: 2px auto;
     padding: 1.5px 3px;
-  }
-
-  .btn-column-prev,
-  .btn-column-next {
-    gap: 0px;
   }
 
   #page-switch {
@@ -109,5 +104,10 @@
   .toolbtns {
     width: 275px;
     bottom: -205px;
+  }
+
+  .btn-column-prev,
+  .btn-column-next {
+    gap: 0px;
   }
 }

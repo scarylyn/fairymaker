@@ -1,8 +1,8 @@
 window.onload = init;
 
 function init() {
-  const savedWeather = JSON.parse(sessionStorage.getItem("savedWeather"));
-  const savedForecast = JSON.parse(sessionStorage.getItem("savedForecast"));
+  const savedWeather = JSON.parse(localStorage.getItem("savedWeather"));
+  const savedForecast = JSON.parse(localStorage.getItem("savedForecast"));
 
   if (savedWeather && savedForecast) {
     displayWeather(savedWeather);
@@ -22,7 +22,9 @@ function init() {
 // Weather Functions
 function getWeather() {
   const apiKey = "be4cbc6ddb60c449b151f55d149abd04";
+  // const newApi = "a7ca491e81444bd3875274c1ed3007bb";
   const city = document.getElementById("city").value;
+  // const zipCode = document.getElementById("city").value;
 
   if (!city) {
     alert("Please enter a city");
@@ -31,12 +33,14 @@ function getWeather() {
 
   const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
   const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=imperial`;
+  // const forecastUrl = `https://api.weatherbit.io/v2.0/forecast/daily&city=${city}&postal_code=${zipCode}&country=US&key=${newApi}`;
+  // const currentWeatherUrl = `https://api.weatherbit.io/v2.0/current&city=${city}&country=US&key=${newApi}`;
 
   fetch(currentWeatherUrl)
     .then((response) => response.json())
     .then((data) => {
       displayWeather(data);
-      sessionStorage.setItem("savedWeather", JSON.stringify(data));
+      localStorage.setItem("savedWeather", JSON.stringify(data));
     })
     .catch((error) => {
       console.error("Error fetching current weather data:", error);
@@ -47,7 +51,7 @@ function getWeather() {
     .then((response) => response.json())
     .then((data) => {
       displayHourlyForecast(data.list);
-      sessionStorage.setItem("savedForecast", JSON.stringify(data.list));
+      localStorage.setItem("savedForecast", JSON.stringify(data.list));
     })
     .catch((error) => {
       console.error("Error fetching hourly forecast data:", error);
