@@ -22,10 +22,7 @@ body {
   );
   background-size: 165% 165%;
   box-sizing: border-box;
-}
-
-#animated-area {
-  background-image: url("/images/bckgnd-aurora-2.jpg");
+  background-image: url("../images/bckgnd-aurora-2.jpg");
   background-position: 0px 0px;
   background-repeat: repeat-x;
   animation: img-slide 100s linear infinite alternate;
