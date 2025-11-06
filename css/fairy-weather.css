@@ -21,25 +21,6 @@
   box-sizing: border-box;
 }
 
-input {
-  width: 200px;
-  padding: 9px;
-  box-sizing: border-box;
-  border-radius: 11px;
-  border: 2px solid rgba(255, 255, 255, 0.8);
-  margin: 0;
-  font-family: "DeliusSwashCaps";
-  font-size: 12px;
-  background: rgba(255, 255, 255, 0.9);
-  transition: all 0.3s ease;
-}
-
-input:focus {
-  outline: none;
-  border-color: #debff4;
-  box-shadow: 0 0 10px rgba(222, 191, 244, 0.5);
-}
-
 .weather-search {
   background: linear-gradient(135deg, #debff4 0%, #c8a2e0 100%);
   color: white;

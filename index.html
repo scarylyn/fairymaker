@@ -37,15 +37,14 @@
           <button type="button" id="nextaccent" class="btn btn-nxt" onclick="nextAccent()">Next Accent</button>
           </div>
         </div>
-        <div class="toolbtns">
-          <button type="button" id="reset" class="btn" onclick="resetPage()">Reset Page</button>
-          <a id="page-switch" href="witchy.html" onclick="switchPage()">Feeling Witchy?</a>
-          <button type="button" id="hide" class="hidebtn" onclick="hideButtons()">Hide Buttons</button>
+        <div class="btn-toolbar">
+          <button type="button" id="reset" class="btn-tool" onclick="resetPage()">Reset Page</button>
+          <a id="page-switch" class="btn-tool" href="witchy.html" onclick="switchPage()">Feeling Witchy?</a>
+          <button type="button" id="hide" class="btn-tool" onclick="hideButtons()">Hide Buttons</button>
         </div>
       </div>
     <div id="weather-container">
-      <input type="text" id="city" placeholder="Enter city" />
-      <button class="weather-search" onclick="getWeather()">Search</button>
+      <button class="weather-search" onclick="getWeather()">Check Weather</button>
       <img id="weather-icon" alt="Weather icon" />
       <div id="temp-div"></div>
       <div id="weather-info"></div>

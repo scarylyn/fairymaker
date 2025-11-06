@@ -9,7 +9,7 @@
 }
 
 .btn,
-.hidebtn {
+.btn-tool {
   font-family: "DeliusSwashCaps";
   font-style: normal;
   font-weight: 400;
@@ -24,6 +24,7 @@
   box-shadow: 0 3px 8px rgba(169, 64, 100, 0.2);
   transition: all 0.3s ease;
   color: #a94064;
+  text-decoration: none;
 }
 
 .btn:hover {
@@ -34,7 +35,7 @@
   background: linear-gradient(135deg, #ffb3c6 0%, #ff99b3 100%);
 }
 
-.hidebtn:hover {
+.btn-tool:hover {
   cursor: url(https://cur.cursors-4u.net/cursors/cur-3/cur243.ani),
     url(https://cur.cursors-4u.net/cursors/cur-3/cur243.png), auto !important;
   box-shadow: 0 5px 12px rgba(169, 64, 100, 0.4);
@@ -57,7 +58,7 @@
   gap: 4px;
   pointer-events: auto;
 }
-
+/* 
 #page-switch {
   text-decoration: none;
   font-family: "DeliusSwashCaps";
@@ -80,17 +81,16 @@
   box-shadow: 0 5px 12px rgba(169, 64, 100, 0.4);
   transform: translateY(-2px);
   background: linear-gradient(135deg, #ffb3c6 0%, #ff99b3 100%);
-}
+} */
 
-.toolbtns {
+.btn-toolbar {
   width: 315px;
   position: absolute;
   bottom: -190px;
 }
 
 @media screen and (max-width: 627px) {
-  .btn,
-  .hidebtn {
+  .btn {
     margin: 2px auto;
     padding: 1.5px 3px;
   }
@@ -106,7 +106,7 @@
     bottom: 6px;
   }
 
-  .toolbtns {
+  .btn-toolbar {
     width: 258px;
     bottom: -205px;
   }

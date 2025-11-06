@@ -53,41 +53,55 @@ function checkMemory() {
 // Weather Functions
 function getWeather() {
   const apiKey = "be4cbc6ddb60c449b151f55d149abd04";
-  // const newApi = "a7ca491e81444bd3875274c1ed3007bb";
-  const city = document.getElementById("city").value;
-  // const zipCode = document.getElementById("city").value;
+  navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
 
-  if (!city) {
-    alert("Please enter a city");
-    return;
+  function successCallback(position) {
+    const coordinates = {
+      latitude: position.coords.latitude,
+      longitude: position.coords.longitude,
+    };
+    const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${coordinates.latitude}&lon=${coordinates.longitude}&units=imperial&appid=${apiKey}`;
+    const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${coordinates.latitude}&lon=${coordinates.longitude}&units=imperial&appid=${apiKey}`;
+
+    fetch(currentWeatherUrl)
+      .then((response) => response.json())
+      .then((data) => {
+        displayWeather(data);
+        localStorage.setItem("savedWeather", JSON.stringify(data));
+      })
+      .catch((error) => {
+        console.error("Error fetching current weather data:", error);
+        alert("Error fetching current weather data. Please try again. :(");
+      });
+
+    fetch(forecastUrl)
+      .then((response) => response.json())
+      .then((data) => {
+        displayHourlyForecast(data.list);
+        localStorage.setItem("savedForecast", JSON.stringify(data.list));
+      })
+      .catch((error) => {
+        console.error("Error fetching hourly forecast data:", error);
+        alert("Error fetching hourly forecast data. Please try again. :(");
+      });
   }
 
-  const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
-  const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=imperial`;
-  // const forecastUrl = `https://api.weatherbit.io/v2.0/forecast/daily&city=${city}&postal_code=${zipCode}&country=US&key=${newApi}`;
-  // const currentWeatherUrl = `https://api.weatherbit.io/v2.0/current&city=${city}&country=US&key=${newApi}`;
-
-  fetch(currentWeatherUrl)
-    .then((response) => response.json())
-    .then((data) => {
-      displayWeather(data);
-      localStorage.setItem("savedWeather", JSON.stringify(data));
-    })
-    .catch((error) => {
-      console.error("Error fetching current weather data:", error);
-      alert("Error fetching current weather data. Please try again. :(");
-    });
-
-  fetch(forecastUrl)
-    .then((response) => response.json())
-    .then((data) => {
-      displayHourlyForecast(data.list);
-      localStorage.setItem("savedForecast", JSON.stringify(data.list));
-    })
-    .catch((error) => {
-      console.error("Error fetching hourly forecast data:", error);
-      alert("Error fetching hourly forecast data. Please try again. :(");
-    });
+  function errorCallback(error) {
+    switch (error.code) {
+      case error.PERMISSION_DENIED:
+        console.log("User denied the request for Geolocation.");
+        break;
+      case error.POSITION_UNAVAILABLE:
+        console.log("Location information is unavailable.");
+        break;
+      case error.TIMEOUT:
+        console.log("The request to get user location timed out.");
+        break;
+      case error.UNKNOWN_ERROR:
+        console.log("An unknown error occurred.");
+        break;
+    }
+  }
 }
 
 function displayWeather(data) {
@@ -147,7 +161,14 @@ function displayHourlyForecast(hourlyData) {
   });
 }
 
+// Displays the weather icon for the hourly panel
 function showImage() {
   const weatherIcon = document.getElementById("weather-icon");
   weatherIcon.style.display = "block";
+}
+
+// Reset Button
+function resetPage() {
+  localStorage.clear();
+  location.reload();
 }

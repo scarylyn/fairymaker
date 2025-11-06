@@ -267,14 +267,6 @@ function previousAccent() {
   }
 }
 
-// Reset Button
-function resetPage() {
-  const input = document.getElementById("city");
-  input.value = "";
-  localStorage.clear();
-  location.reload();
-}
-
 // Hide Button
 function hideButtons() {
   const hiddenBtns = document.getElementsByClassName("btn");
