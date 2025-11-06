@@ -67,18 +67,12 @@
 
 @media screen and (max-width: 627px) {
   .btn,
-  .hidebtn {
+  .btn-tool {
     margin: 2px auto;
     padding: 1.5px 3px;
   }
 
-  #page-switch {
-    margin: 2px auto;
-    padding: 1.5px 3px;
-    bottom: 6px;
-  }
-
-  .toolbtns {
+  .btn-toolbar {
     width: 275px;
     bottom: -205px;
   }
