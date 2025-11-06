@@ -274,6 +274,7 @@ function previousAccent() {
 function hideButtons() {
   const hiddenBtns = document.getElementsByClassName("btn");
   const titleChange = document.getElementById("pagetitle");
+
   for (let i = 0; i < hiddenBtns.length; i++) {
     if (hiddenBtns[i].style.display === "none") {
       hiddenBtns[i].style.display = "block";

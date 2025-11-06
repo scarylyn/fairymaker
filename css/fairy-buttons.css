@@ -17,9 +17,9 @@
   border-radius: 22px;
   border: 2px solid rgba(255, 255, 255, 0.6);
   background: linear-gradient(135deg, #ffd1dc 0%, #ffb3c6 100%);
-  margin: 4px auto;
+  margin: 2px auto;
   text-align: center;
-  padding: 6px 12px;
+  padding: 3px 9px;
   font-size: 12px;
   box-shadow: 0 3px 8px rgba(169, 64, 100, 0.2);
   transition: all 0.3s ease;
@@ -47,7 +47,6 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 4px;
   pointer-events: auto;
 }
 
@@ -55,14 +54,14 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 4px;
   pointer-events: auto;
 }
 
 .btn-toolbar {
-  width: 315px;
-  position: absolute;
-  bottom: -190px;
+  display: flex;
+  justify-content: space-between;
+  width: 475px;
+  margin-top: 3px;
 }
 
 @media screen and (max-width: 627px) {
@@ -78,12 +77,7 @@
   }
 
   .btn-toolbar {
-    width: 275px;
-    bottom: -205px;
-  }
-
-  .btn-toolbar {
-    width: 258px;
-    bottom: -205px;
+    width: 400px;
+    margin-top: 3px;
   }
 }

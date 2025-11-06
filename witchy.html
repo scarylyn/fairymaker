@@ -34,20 +34,22 @@
           <button type="button" id="nextaccent" class="btn btn-nxt" onclick="nextAccent()">Next Accent</button>
           </div>
         </div>
-        <div class="btn-toolbar">
-          <button type="button" id="reset" class="btn" onclick="resetPage()">Reset Page</button>
-          <a id="page-switch" class="btn-tool" href="index.html" onclick="switchPage()">Seeking the Fae?</a>
-          <button type="button" id="hide" class="btn-tool" onclick="hideButtons()">Hide Buttons</button>
-        </div>
       </div>
     <div id="weather-container">
-      <button class="weather-search" onclick="getWeather()">Check Weather</button>
-      <img id="weather-icon" alt="Weather icon" />
-      <div id="temp-div"></div>
-      <div id="weather-info"></div>
-      <div id="hourly-forecast"></div>
+        <img id="weather-icon" alt="Weather icon" />
+      <div class="weather-text">
+        <div id="temp-div"></div>
+        <div id="weather-info"></div>
+      </div>
+        <div id="hourly-forecast"></div>
     </div>
-    <div id="timestamp"></div>
+    <div id="timestamp"></div>        
+    <div class="btn-toolbar">
+      <button id="search" class="btn-tool" onclick="getWeather()">Check Weather</button>
+      <a id="page-switch" class="btn-tool" href="index.html">Seeking the Fae?</a>
+      <button type="button" id="hide" class="btn-tool" onclick="hideButtons()">Hide Buttons</button>
+      <button type="button" id="reset" class="btn-tool" onclick="resetPage()">Reset Page</button>
+    </div>
       <script src="./js/witchy-weather-script.js"></script>
       <script src="./js/witchy-buttons.js"></script>
   </body>

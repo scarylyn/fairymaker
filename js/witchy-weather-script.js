@@ -132,6 +132,7 @@ function displayWeather(data) {
     weatherTimestamp.innerHTML = dateTime;
 
     showImage();
+    searchButton();
   }
 }
 
@@ -167,4 +168,10 @@ function showImage() {
 function resetPage() {
   localStorage.clear();
   location.reload();
+}
+
+// Change Search Button Text on click
+function searchButton() {
+  const searchButton = document.getElementById("search");
+  searchButton.textContent = "Refresh Weather";
 }

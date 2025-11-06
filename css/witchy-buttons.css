@@ -17,9 +17,9 @@
   border-radius: 22px;
   border: 2px solid rgba(255, 255, 255, 0.6);
   background: linear-gradient(135deg, #ead1ff 0%, #e3b3ff 100%);
-  margin: 4px auto;
+  margin: 2px auto;
   text-align: center;
-  padding: 6px 12px;
+  padding: 3px 9px;
   font-size: 12px;
   box-shadow: 0 3px 8px rgba(127, 64, 169, 0.2);
   transition: all 0.3s ease;
@@ -44,16 +44,16 @@
 }
 
 .btn-toolbar {
-  width: 330px;
-  position: absolute;
-  bottom: -190px;
+  display: flex;
+  justify-content: space-between;
+  width: 475px;
+  margin-top: 3px;
 }
 
 .btn-column-prev {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 4px;
   pointer-events: auto;
 }
 
@@ -61,7 +61,6 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 4px;
   pointer-events: auto;
 }
 
@@ -73,8 +72,8 @@
   }
 
   .btn-toolbar {
-    width: 275px;
-    bottom: -205px;
+    width: 400px;
+    margin-top: 3px;
   }
 
   .btn-column-prev,

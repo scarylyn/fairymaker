@@ -5,7 +5,7 @@
     rgba(232, 191, 244, 0.95) 100%
   );
   width: 100%;
-  max-width: 900px;
+  max-width: 500px;
   padding: 15px 25px;
   border-radius: 15px;
   box-shadow: 0 6px 24px rgba(169, 64, 100, 0.3),
@@ -21,28 +21,9 @@
   box-sizing: border-box;
 }
 
-.weather-search {
-  background: linear-gradient(135deg, #debff4 0%, #c8a2e0 100%);
-  color: white;
-  padding: 9px 18px;
-  border: none;
-  border-radius: 22px;
-  cursor: pointer;
-  margin: 0;
-  width: auto;
-  font-size: 12px;
-  font-family: "DeliusSwashCaps";
-  font-weight: 400;
-  box-shadow: 0 3px 9px rgba(139, 72, 215, 0.3);
-  transition: all 0.3s ease;
-}
-
-.weather-search:hover {
-  cursor: url(https://cur.cursors-4u.net/cursors/cur-3/cur243.ani),
-    url(https://cur.cursors-4u.net/cursors/cur-3/cur243.png), auto !important;
-  background: linear-gradient(135deg, #c8a2e0 0%, #8b48d7 100%);
-  box-shadow: 0 5px 12px rgba(139, 72, 215, 0.5);
-  transform: translateY(-2px);
+.weather-text {
+  display: flex;
+  gap: 15px;
 }
 
 #temp-div {
@@ -51,7 +32,7 @@
 }
 
 #temp-div p {
-  font-size: 45px;
+  font-size: 42px;
   margin: 0;
   font-family: "DeliusSwashCaps";
   color: #8b48d7;
@@ -65,6 +46,7 @@
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -83,7 +65,6 @@
   display: flex;
   gap: 7px;
   overflow-x: auto;
-  flex: 1;
   max-width: 100%;
   justify-content: flex-start;
   scrollbar-width: thin;
@@ -96,7 +77,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 7px;
   color: #a94064;
   font-family: "DeliusSwashCaps";
   font-size: 11px;
@@ -125,7 +105,7 @@
   font-size: 12px;
   text-shadow: 2px 2px 4px rgba(169, 64, 100, 0.4);
   background: rgba(169, 64, 100, 0.2);
-  padding: 4px 10px;
+  padding: 0 6px;
   margin-top: 6px;
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -136,7 +116,7 @@
   #weather-container {
     padding: 5px 20px 10px 20px;
     width: 100%;
-    max-width: 425px;
+    max-width: 415px;
   }
 
   #weather-info {
@@ -166,7 +146,7 @@
 
   #timestamp {
     font-size: 10px;
-    padding: 2px 5px;
+    padding: 0 5px;
     margin-top: 5px;
   }
 }

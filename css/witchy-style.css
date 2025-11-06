@@ -46,13 +46,13 @@ body {
   text-shadow: 3px 3px 6px rgba(145, 64, 169, 0.5),
     0 0 20px rgba(242, 209, 255, 0.4);
   letter-spacing: 2px;
-  margin: 0 0 15px 0;
+  margin: 0 0 10px 0;
   text-align: center;
 }
 
 #container {
   position: relative;
-  height: 280px;
+  height: 275px;
   width: 515px;
   display: flex;
   align-items: center;
@@ -91,14 +91,15 @@ body {
   }
 
   #pagetitle {
+    margin-top: -10px;
     font-size: 30px;
     max-width: 550px;
     min-width: 300px;
   }
 
   #container {
-    height: 215px;
-    width: 450px;
+    height: 200px;
+    width: 420px;
   }
 
   #dollarea,
