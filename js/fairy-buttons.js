@@ -290,3 +290,35 @@ function hideButtons() {
     hideBtn.textContent = "Hide Buttons";
   }
 }
+
+// Dedication and Thanks Modal
+const thanksModal = document.getElementById("modal-thanks");
+const closeBtn = document.getElementById("modal-yes-btn");
+const jokeBtn = document.getElementById("modal-no-btn");
+
+function sillyJoke() {
+  if (jokeBtn.textContent === "It's useless.") {
+    jokeBtn.textContent = "Huh? This button doesn't work...";
+  } else if (jokeBtn.textContent === "Huh? This button doesn't work...") {
+    jokeBtn.textContent = "Nice try *wink*";
+  } else if (jokeBtn.textContent === "Nice try *wink*") {
+    jokeBtn.textContent = "Nuh uh uh~";
+  } else if (jokeBtn.textContent === "Nuh uh uh~") {
+    jokeBtn.textContent = "Did you really not like it this much?";
+  } else if (jokeBtn.textContent === "Did you really not like it this much?") {
+    jokeBtn.textContent = "😭";
+  } else if (jokeBtn.textContent === "😭") {
+    closeModal();
+  }
+}
+
+function openModal() {
+  thanksModal.classList.remove("modal-is-closed");
+  thanksModal.classList.add("modal-is-opened");
+}
+
+function closeModal() {
+  thanksModal.classList.remove("modal-is-opened");
+  thanksModal.classList.add("modal-is-closed");
+  jokeBtn.textContent = "It's useless.";
+}

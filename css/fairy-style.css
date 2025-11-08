@@ -85,6 +85,43 @@ body {
   border: none;
 }
 
+#modal-thanks {
+  font-family: "DeliusSwashCaps";
+  font-weight: 400;
+  z-index: 5;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  background-color: rgba(255, 209, 220, 0.9);
+  text-align: center;
+  padding: 3px 9px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  color: #a94064;
+  border-radius: 22px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+#modal-title {
+  margin: 10px 0 0 0;
+}
+
+#modal-dialog {
+  margin: 15px 0 0 0;
+}
+
+#modal-joke {
+  margin: 10px 0 20px 0;
+}
+
+.modal-is-opened {
+  display: block;
+}
+
+.modal-is-closed {
+  display: none;
+}
+
 @media screen and (max-width: 627px) {
   body {
     background-size: 200% 200%;
@@ -112,5 +149,11 @@ body {
   #wings {
     width: 175px;
     height: 175px;
+  }
+
+  #modal-thanks {
+    height: 275px;
+    width: 250px;
+    font-size: 14px;
   }
 }

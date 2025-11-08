@@ -73,8 +73,60 @@
 .btn-toolbar {
   display: flex;
   justify-content: space-between;
-  width: 475px;
+  width: 500px;
   margin-top: 3px;
+}
+
+#modal-btn-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  max-height: 52px;
+  margin: 0;
+}
+
+.modal-close-btn {
+  border-radius: 5px;
+  background-color: transparent;
+  text-wrap: wrap;
+  text-align: center;
+  border-radius: 22px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  background: #ffd1dc;
+  background: linear-gradient(
+    162deg,
+    rgba(255, 209, 220, 1) 0%,
+    rgba(255, 196, 210, 1) 35%,
+    rgba(255, 179, 198, 1) 100%
+  );
+  margin: 2px auto;
+  padding: 3px 7px;
+  font-size: 12px;
+  transition: all 0.3s ease;
+  color: #a94064;
+}
+
+.modal-close-btn:hover {
+  cursor: url(https://cur.cursors-4u.net/cursors/cur-3/cur243.ani),
+    url(https://cur.cursors-4u.net/cursors/cur-3/cur243.png), auto !important;
+  box-shadow: 0 5px 12px rgba(169, 64, 100, 0.4);
+  transform: translateY(-2px);
+  background: #ff99b3;
+  background: radial-gradient(
+    circle,
+    rgba(255, 153, 179, 1) 0%,
+    rgba(255, 179, 198, 1) 75%
+  );
+}
+
+#modal-yes-btn {
+  width: 85px;
+}
+
+#modal-no-btn {
+  min-width: 85px;
+  max-width: 120px;
 }
 
 @media screen and (max-width: 627px) {
@@ -92,5 +144,11 @@
   .btn-toolbar {
     width: 400px;
     margin-top: 3px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  #modal-btn-bar {
+    width: 250px;
   }
 }

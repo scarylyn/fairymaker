@@ -7,6 +7,15 @@
   <title>Fairy Weather</title>
   <body>
     <h1 id="pagetitle">Create your Weather Fairy</h1>
+        <dialog id="modal-thanks" class="modal-is-closed">
+          <h2 id="modal-title">Thank you for checking out my little project!</h2>
+          <p id="modal-dialog">This page is dedicated to my mom, Tina. She's the one who planted the inspirational seed in my head that lead to this page, and without her it wouldn't exist.</p>
+          <p id="modal-joke">The buttons below take a tally of votes, so please choose one and let me know how you feel about this page!</p>
+          <div id="modal-btn-bar">
+          <button id="modal-yes-btn" class="modal-close-btn" onclick="closeModal()">I love it!</button>
+          <button id="modal-no-btn" class="modal-close-btn" onclick="sillyJoke()">It's useless.</button>
+          </div>
+        </dialog>
       <div id="container">
         <div id="dollarea">
           <img id="dollbckgnd"></img>
@@ -52,6 +61,7 @@
           <a id="page-switch"  href="index-elf.html" class="btn-tool" onclick="switchPage()">Is that...a glen?</a>
           <button type="button" id="hide" class="btn-tool" onclick="hideButtons()">Hide Buttons</button>
           <button type="button" id="reset" class="btn-tool" onclick="resetPage()">Reset Page</button>
+          <button type="button" class="btn-tool" id="modal-open-btn" onclick="openModal()">A Little Note</button>
         </div>
       <script src="./js/fairy-weather.js"></script>
       <script src="./js/fairy-buttons.js"></script>
