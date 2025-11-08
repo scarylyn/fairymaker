@@ -5,9 +5,8 @@ Since I'm still a beginner, I'm using this idea as a way to expand my skills, as
 
 ### Resources
 
-The big one is the image assets. I am not an artistic person, but I do remember some of my favorite old dollmakers. I found a simpler one, but couldn't find a definitive way to reach out to the creator(s) for permission, so the assets will have to change eventually.
+The big one is the image assets. I am not an artistic person, but I do remember some of my favorite old dollmakers. I found a simpler one, but couldn't find a definitive way to reach out to the creator(s) for permission, so the assets will have to change eventually. [This is the dollmaker, Samantha Dressup.](https://web.archive.org/web/20090105170235/http://www.dollsmania.net/Samantha_Dressup.html)
 
-[This is the dollmaker, Samantha Dressup.](https://web.archive.org/web/20090105170235/http://www.dollsmania.net/Samantha_Dressup.html)
 Recently I added a second type of fairy to design, [this](https://web.archive.org/web/20091214122250/http://www.dollzmaniadressupgames.com/ChaZie_Elf_Fairy.htm) was the dollmaker used.
 
 ##### If anyone knows how I can get in contact with any of the artists that designed the ChaZie style of dollmaker on dollzmania, please please either let me know or have them reach out to me at scarylyn@gmail.com.
