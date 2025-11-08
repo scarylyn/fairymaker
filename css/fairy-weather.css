@@ -8,8 +8,6 @@
   max-width: 500px;
   padding: 15px 25px;
   border-radius: 15px;
-  box-shadow: 0 6px 24px rgba(169, 64, 100, 0.3),
-    0 0 0 2px rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(10px);
   border: 2px solid rgba(255, 255, 255, 0.6);
   text-align: center;

@@ -1,17 +1,20 @@
 ## FairyMaker is mostly a proof of concept
 
 My mom used to have a [weather fairy](https://web.archive.org/web/20091001224203/http://weatherpixie.com/index.php?place=EGLL&trooper=1&type=&htm=1) built into her blog, and when we were talking about it I thought, "I wonder if I could expand on that?"
-Since I'm still a beginner, I'm using this idea as a way to expand my skills, as well as implement new things as I learn about them. *(For example there was no weather implementation at all until I learned more about APIs.)*
-
-
+Since I'm still a beginner, I'm using this idea as a way to expand my skills, as well as implement new things as I learn about them. _(For example there was no weather implementation at all until I learned more about APIs.)_
 
 ### Resources
 
-The big one is the image assets. I am not an artistic person, but I do remember some of my favorite old dollmakers. I found a simpler one, but couldn't find a definitive way to reach out to the creator(s) for permission, so the assets will have to change eventually. [This is the dollmaker, Samantha Dressup.](https://web.archive.org/web/20090105170235/http://www.dollsmania.net/Samantha_Dressup.html)
+The big one is the image assets. I am not an artistic person, but I do remember some of my favorite old dollmakers. I found a simpler one, but couldn't find a definitive way to reach out to the creator(s) for permission, so the assets will have to change eventually.
 
-The custom cursors can be found [here,](https://www.cursors-4u.com/cursor/2009/09/15/pink-glitter-pointer.html) [here,](https://www.cursors-4u.com/cursor/2009/09/15/fuschia-glitter-pointer.html) [here,](https://www.cursors-4u.com/cursor/2009/09/15/purple-glitter-pointer-3.html) and [here.](https://www.cursors-4u.com/cursor/2009/09/15/light-purple-glitter-pointer.html)
+[This is the dollmaker, Samantha Dressup.](https://web.archive.org/web/20090105170235/http://www.dollsmania.net/Samantha_Dressup.html)
+Recently I added a second type of fairy to design, [this](https://web.archive.org/web/20091214122250/http://www.dollzmaniadressupgames.com/ChaZie_Elf_Fairy.htm) was the dollmaker used.
 
-The favicons were found [here](https://favicon.io/emoji-favicons/sparkles/) and [here.](https://www.flaticon.com/free-icon/magic-ball_12402385?related_id=12402385)
+##### If anyone knows how I can get in contact with any of the artists that designed the ChaZie style of dollmaker on dollzmania, please please either let me know or have them reach out to me at scarylyn@gmail.com.
+
+The custom cursors can be found [here,](https://www.cursors-4u.com/cursor/2009/09/15/pink-glitter-pointer.html) [here,](https://www.cursors-4u.com/cursor/2009/09/15/fuschia-glitter-pointer.html) [here,](https://www.cursors-4u.com/cursor/2009/09/15/dark-green-glitter-pointer.html) and [here.](https://www.cursors-4u.com/cursor/2009/09/15/green-glitter-pointer.html)
+
+The favicon can be found [here.](https://favicon.io/emoji-favicons/sparkles/)
 
 Recently I added background images, which can be found on [Pexels.](https://www.pexels.com/)
 

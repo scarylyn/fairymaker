@@ -13,15 +13,15 @@
 }
 
 @font-face {
-  font-family: "Flavors";
+  font-family: "ButterflyKids";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/Flavors-Regular.ttf") format("truetype");
+  src: url("../fonts/ButterflyKids-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Lacquer";
+  font-family: "FleurDeLeah";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/Lacquer-Regular.ttf") format("truetype");
+  src: url("../fonts/FleurDeLeah-Regular.ttf") format("truetype");
 }

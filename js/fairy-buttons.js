@@ -1,63 +1,61 @@
-// Image Arrays
 const backgrounds = [
-  // These are the backgrounds for the doll
-  "images/fairy/dollbckgnd0.png",
-  "images/fairy/dollbckgnd1.png",
-  "images/fairy/dollbckgnd2.png",
-  "images/fairy/dollbckgnd3.png",
-  "images/fairy/dollbckgnd4.png",
+  "assets/fairy/dollbckgnd0.png",
+  "assets/fairy/dollbckgnd1.png",
+  "assets/fairy/dollbckgnd2.png",
+  "assets/fairy/dollbckgnd3.png",
+  "assets/fairy/dollbckgnd4.png",
 ];
 
 const wings = [
-  "images/fairy/wing-dm001.png",
-  "images/fairy/wing-dm002.png",
-  "images/fairy/wing-dm003.png",
-  "images/fairy/wing-dm004.png",
-  "images/fairy/wing-dm005.png",
-  "images/fairy/wing-dm006.png",
-  "images/fairy/wing-dm007.png",
+  "assets/fairy/wing-dm001.png",
+  "assets/fairy/wing-dm002.png",
+  "assets/fairy/wing-dm003.png",
+  "assets/fairy/wing-dm004.png",
+  "assets/fairy/wing-dm005.png",
+  "assets/fairy/wing-dm006.png",
+  "assets/fairy/wing-dm007.png",
 ];
 
 const body = [
-  "images/bodies/Samantha_Base-13.png",
-  "images/bodies/Samantha_Base13a.png",
-  "images/bodies/Samantha_Base13c.png",
-  "images/bodies/Samantha_Base13d.png",
-  "images/bodies/Samantha_Base-13e.png",
-  "images/bodies/Samantha_Base13f.png",
-  "images/bodies/Samantha_Base13g.png",
-  "images/bodies/Samantha_Base-14.png",
-  "images/bodies/Samantha_Base-15.png",
+  "assets/bodies/Samantha_Base-13.png",
+  "assets/bodies/Samantha_Base13a.png",
+  "assets/bodies/Samantha_Base13c.png",
+  "assets/bodies/Samantha_Base13d.png",
+  "assets/bodies/Samantha_Base-13e.png",
+  "assets/bodies/Samantha_Base13f.png",
+  "assets/bodies/Samantha_Base13g.png",
+  "assets/bodies/Samantha_Base-14.png",
+  "assets/bodies/Samantha_Base-15.png",
 ];
 
 const hair = [
-  "images/fairy/hair-dm022.png",
-  "images/fairy/hair-dm023.png",
-  "images/fairy/hair-dm024.png",
-  "images/fairy/hair-dm025.png",
-  "images/fairy/hair-dm026.png",
-  "images/fairy/hair-dm027.png",
+  "assets/fairy/hair-dm022.png",
+  "assets/fairy/hair-dm023.png",
+  "assets/fairy/hair-dm024.png",
+  "assets/fairy/hair-dm025.png",
+  "assets/fairy/hair-dm026.png",
+  "assets/fairy/hair-dm027.png",
 ];
 
 const dress = [
-  "images/fairy/dress-dm005.png",
-  "images/fairy/dress-dm006.png",
-  "images/fairy/dress-dm007.png",
-  "images/fairy/dress-dm008.png",
+  "assets/fairy/dress-dm005.png",
+  "assets/fairy/dress-dm006.png",
+  "assets/fairy/dress-dm007.png",
+  "assets/fairy/dress-dm008.png",
 ];
 
 const shoes = [
-  "images/fairy/shoe-dm004.png",
-  "images/fairy/shoe-dm005.png",
-  "images/fairy/shoe-dm006.png",
-  "images/fairy/shoe-dm007.png",
+  "assets/fairy/shoe-dm004.png",
+  "assets/fairy/shoe-dm005.png",
+  "assets/fairy/shoe-dm006.png",
+  "assets/fairy/shoe-dm007.png",
 ];
 
 const accent = [
-  "images/fairy/acc-dm058.png",
-  "images/fairy/acc-dm062.png",
-  "images/fairy/acc-dm069.png",
-  "images/blank.png",
+  "assets/fairy/acc-dm058.png",
+  "assets/fairy/acc-dm062.png",
+  "assets/fairy/acc-dm069.png",
+  "assets/blank-small.png",
 ];
 
 // Doll Background Functions
@@ -285,7 +283,6 @@ function hideButtons() {
     }
   }
 
-  // Toggle button text
   const hideBtn = document.getElementById("hide");
   if (hideBtn.textContent === "Hide Buttons") {
     hideBtn.textContent = "Show Buttons";

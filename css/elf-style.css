@@ -1,0 +1,111 @@
+@import url(../css/normalize.css);
+@import url(../css/elf-buttons.css);
+@import url(../css/fonts.css);
+@import url(../css/elf-weather.css);
+
+body {
+  cursor: url(https://cur.cursors-4u.net/cursors/cur-3/cur225.ani),
+    url(https://cur.cursors-4u.net/cursors/cur-3/cur225.png), auto !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  background: #e8f4ea;
+  background: radial-gradient(
+    circle,
+    rgba(232, 244, 234, 1) 0%,
+    rgba(210, 231, 214, 1) 50%,
+    rgba(184, 216, 190, 1) 100%
+  );
+  background-size: 150% 150%;
+  box-sizing: border-box;
+  background-image: url(../assets/grass.jpg);
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+  animation: img-slide 100s linear infinite alternate;
+}
+
+@keyframes img-slide {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+#pagetitle {
+  font-family: "FleurDeLeah";
+  font-weight: 400;
+  color: #84b87c;
+  font-size: 45px;
+  text-shadow: 1.5px 1.5px 3px rgba(209, 236, 193, 0.5),
+    0 0 20px rgba(186, 221, 164, 0.4);
+  letter-spacing: 2px;
+  margin: 0;
+  text-align: center;
+}
+
+#elf-container {
+  position: relative;
+  height: 300px;
+  width: 615px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#elf-area {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  box-shadow: 0 6px 24px rgba(176, 202, 162, 0.3),
+    0 0 0 2px rgba(209, 236, 193, 0.5);
+  border: 2px solid rgba(209, 236, 193, 0.6);
+  width: 150px;
+  height: 290px;
+}
+
+#elf-accent,
+#elf-area,
+#elf-body,
+#elf-bckgnd,
+#elf-dress,
+#elf-gloves,
+#elf-hair,
+#elf-shoes,
+#elf-wings {
+  position: absolute;
+  width: 150px;
+  height: 290px;
+  border-radius: 15px;
+  border: none;
+}
+
+@media screen and (max-width: 627px) {
+  body {
+    background-size: 200% 200%;
+  }
+
+  #pagetitle {
+    max-width: 550px;
+    min-width: 300px;
+  }
+
+  #elf-accent,
+  #elf-area,
+  #elf-body,
+  #elf-bckgnd,
+  #elf-dress,
+  #elf-gloves,
+  #elf-hair,
+  #elf-shoes,
+  #elf-wings {
+    width: 140px;
+    height: 280px;
+  }
+}

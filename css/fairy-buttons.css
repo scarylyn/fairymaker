@@ -1,5 +1,4 @@
 #buttons {
-  position: absolute;
   display: flex;
   width: 100%;
   height: 100%;
@@ -11,17 +10,21 @@
 .btn,
 .btn-tool {
   font-family: "DeliusSwashCaps";
-  font-style: normal;
   font-weight: 400;
   cursor: pointer;
   border-radius: 22px;
   border: 2px solid rgba(255, 255, 255, 0.6);
-  background: linear-gradient(135deg, #ffd1dc 0%, #ffb3c6 100%);
+  background: #ffd1dc;
+  background: linear-gradient(
+    162deg,
+    rgba(255, 209, 220, 1) 0%,
+    rgba(255, 196, 210, 1) 35%,
+    rgba(255, 179, 198, 1) 100%
+  );
   margin: 2px auto;
   text-align: center;
   padding: 3px 9px;
   font-size: 12px;
-  box-shadow: 0 3px 8px rgba(169, 64, 100, 0.2);
   transition: all 0.3s ease;
   color: #a94064;
   text-decoration: none;
@@ -32,7 +35,12 @@
     url(https://cur.cursors-4u.net/cursors/cur-3/cur243.png), auto !important;
   box-shadow: 0 5px 12px rgba(169, 64, 100, 0.4);
   transform: translateY(-2px);
-  background: linear-gradient(135deg, #ffb3c6 0%, #ff99b3 100%);
+  background: #ff99b3;
+  background: radial-gradient(
+    circle,
+    rgba(255, 153, 179, 1) 0%,
+    rgba(255, 179, 198, 1) 75%
+  );
 }
 
 .btn-tool:hover {
@@ -40,7 +48,12 @@
     url(https://cur.cursors-4u.net/cursors/cur-3/cur243.png), auto !important;
   box-shadow: 0 5px 12px rgba(169, 64, 100, 0.4);
   transform: translateY(-2px);
-  background: linear-gradient(135deg, #ffb3c6 0%, #ff99b3 100%);
+  background: #ff99b3;
+  background: radial-gradient(
+    circle,
+    rgba(255, 153, 179, 1) 0%,
+    rgba(255, 179, 198, 1) 75%
+  );
 }
 
 .btn-column-prev {

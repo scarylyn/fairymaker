@@ -1,0 +1,154 @@
+#weather-container {
+  background: #d1ecc1;
+  background: radial-gradient(
+    circle,
+    rgba(209, 236, 193, 1) 0%,
+    rgba(186, 221, 164, 1) 50%,
+    rgba(132, 184, 124, 1) 100%
+  );
+  width: 100%;
+  max-width: 500px;
+  padding: 5px 15px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(209, 236, 193, 0.6);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+.weather-text {
+  font-family: "DeliusSwashCaps";
+  font-weight: 400;
+  display: flex;
+  gap: 15px;
+}
+
+#temp-div {
+  display: flex;
+  align-items: center;
+}
+
+#temp-div p {
+  font-size: 42px;
+  margin: 0;
+  color: #45904a;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+}
+
+#weather-info {
+  font-size: 15px;
+  color: #45904a;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#weather-info p {
+  margin: 2px 0;
+}
+
+#weather-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0;
+  display: none;
+}
+
+#hourly-forecast {
+  font-family: "DeliusSwashCaps";
+  font-weight: 400;
+  display: flex;
+  gap: 7px;
+  overflow-x: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(186, 221, 164, 0.95) rgba(209, 236, 193, 0.95);
+}
+
+.hourly-item {
+  flex: 0 0 auto;
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #45904a;
+  font-size: 11px;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 6px;
+  border-radius: 9px;
+  text-shadow: 1px 1px 2px rgba(186, 221, 164, 0.8);
+}
+
+.hourly-item img {
+  width: 22px;
+  height: 22px;
+  margin-bottom: 4px;
+}
+
+#hourly-heading {
+  color: #fff;
+  margin-top: 10px;
+}
+
+#timestamp {
+  font-family: "DeliusSwashCaps";
+  font-weight: 400;
+  color: #45904a;
+  line-height: 20px;
+  font-size: 12px;
+  text-shadow: 2px 2px 4px rgba(186, 221, 164, 0.4);
+  background: rgba(209, 236, 193, 0.2);
+  padding: 0 6px;
+  margin-top: 6px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 627px) {
+  #weather-container {
+    padding: 5px 20px 10px 20px;
+    width: 100%;
+    max-width: 415px;
+  }
+
+  #weather-info {
+    font-size: 13px;
+  }
+
+  #weather-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  #temp-div p {
+    font-size: 35px;
+  }
+
+  .hourly-item {
+    width: 50px;
+    margin-right: 0px;
+    padding: 2px;
+  }
+
+  .hourly-item img {
+    width: 15px;
+    height: 15px;
+    margin-bottom: 0px;
+  }
+
+  #timestamp {
+    font-size: 10px;
+    padding: 0 5px;
+    margin-top: 5px;
+  }
+}
