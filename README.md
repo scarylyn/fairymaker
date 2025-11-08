@@ -9,7 +9,7 @@ The big one is the image assets. I am not an artistic person, but I do remember 
 
 Recently I added a second type of fairy to design, [this](https://web.archive.org/web/20091214122250/http://www.dollzmaniadressupgames.com/ChaZie_Elf_Fairy.htm) was the dollmaker used.
 
-##### If anyone knows how I can get in contact with any of the artists that designed the ChaZie style of dollmaker on dollzmania, please please either let me know or have them reach out to me at scarylyn@gmail.com.
+#### All dollmaker assets belong to DollzMania. I want to give proper credits but cannot seem to find a way to reach out to any of the original creators through the wayback machine. I am willing to pull the assets upon request of the owners. If anyone knows how I can get in contact with any of the artists that designed specifically the ChaZie style of dollmaker for DollzMania, please have them reach out to me at scarylyn@gmail.com. 
 
 The custom cursors can be found [here,](https://www.cursors-4u.com/cursor/2009/09/15/pink-glitter-pointer.html) [here,](https://www.cursors-4u.com/cursor/2009/09/15/fuschia-glitter-pointer.html) [here,](https://www.cursors-4u.com/cursor/2009/09/15/dark-green-glitter-pointer.html) and [here.](https://www.cursors-4u.com/cursor/2009/09/15/green-glitter-pointer.html)
 
