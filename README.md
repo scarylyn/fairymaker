@@ -20,4 +20,4 @@ Recently I added background images, which can be found on [Pexels.](https://www.
 ### Want to try it out?
 
 Check out the [GitHub Pages Deployment!](https://scarylyn.github.io/fairymaker/index.html) I finally got it working correctly!
-<img src="/assets/fairy-sample-mobile-no-buttons.png">
+<img src="/assets/fairy-sample-no-buttons.png">
