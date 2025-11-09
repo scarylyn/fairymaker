@@ -7,7 +7,7 @@ Since I'm still a beginner, I'm using this idea as a way to expand my skills, as
 
 The big one is the image assets. I am not an artistic person, but I do remember some of my favorite old dollmakers. I found a simpler one, but couldn't find a definitive way to reach out to the creator(s) for permission, so the assets will have to change eventually. [This is the dollmaker, Samantha Dressup.](https://web.archive.org/web/20090105170235/http://www.dollsmania.net/Samantha_Dressup.html)
 
-Recently I added a second type of fairy to design. [Here,](https://web.archive.org/web/20091214122250/http://www.dollzmaniadressupgames.com/ChaZie_Elf_Fairy.htm)[here,](https://web.archive.org/web/20100304001021/http://www.dollzmania.net/ChaZieMaker_Fantasy_2.htm)[and here](https://web.archive.org/web/20080104174147/http://www.dollzmania.net/ChaZieMaker_Fantasy.htm) are the dollmakers used.
+Recently I added a second type of fairy to design. [Here,](https://web.archive.org/web/20091214122250/http://www.dollzmaniadressupgames.com/ChaZie_Elf_Fairy.htm) [here,](https://web.archive.org/web/20100304001021/http://www.dollzmania.net/ChaZieMaker_Fantasy_2.htm) [and here](https://web.archive.org/web/20080104174147/http://www.dollzmania.net/ChaZieMaker_Fantasy.htm) are the dollmakers used.
 
 #### All dollmaker assets belong to DollzMania. I want to give proper credits but cannot seem to find a way to reach out to any of the original creators through the webpages archived on the Wayback Machine. I am willing to pull the assets upon request of the owners. If anyone knows how I can get in contact with any of the artists that designed specifically the ChaZie style of dollmaker for DollzMania, please have them reach out to me at scarylyn@gmail.com.
 
