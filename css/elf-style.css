@@ -77,6 +77,8 @@ body {
 #elf-dress,
 #elf-gloves,
 #elf-hair,
+#elf-headwear,
+#elf-socks,
 #elf-shoes,
 #elf-wings {
   position: absolute;
@@ -84,6 +86,80 @@ body {
   height: 290px;
   border-radius: 15px;
   border: none;
+}
+
+#modal-warning {
+  font-family: "DeliusSwashCaps";
+  font-weight: 400;
+  z-index: 5;
+  width: 300px;
+  height: 175px;
+  position: absolute;
+  background: #d1ecc1;
+  background: radial-gradient(
+    circle,
+    rgba(209, 236, 193, 1) 0%,
+    rgba(186, 221, 164, 1) 50%,
+    rgba(132, 184, 124, 1) 100%
+  );
+  text-align: center;
+  padding: 3px 9px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  color: #45904a;
+  border-radius: 22px;
+  border: 2px solid rgba(209, 236, 193, 0.6);
+}
+
+#modal-title {
+  margin: 10px 0 0 0;
+}
+
+#modal-dialog {
+  margin: 15px 0 15px 0;
+}
+
+.modal-is-opened {
+  display: block;
+}
+
+.modal-is-closed {
+  display: none;
+}
+
+.modal-close-btn {
+  font-family: "DeliusSwashCaps";
+  font-weight: 400;
+  cursor: pointer;
+  border-radius: 22px;
+  border: 2px solid rgba(232, 244, 234, 0.6);
+  background: #e8f4ea;
+  background: linear-gradient(
+    162deg,
+    rgba(232, 244, 234, 1) 0%,
+    rgba(210, 231, 214, 1) 35%,
+    rgba(184, 216, 190, 1) 100%
+  );
+  margin: 2px auto;
+  text-align: center;
+  padding: 3px 9px;
+  font-size: 12px;
+  transition: all 0.3s ease;
+  color: #45904a;
+  text-decoration: none;
+}
+
+.modal-close-btn:hover {
+  cursor: url(https://cur.cursors-4u.net/cursors/cur-3/cur226.ani),
+    url(https://cur.cursors-4u.net/cursors/cur-3/cur226.png), auto !important;
+  box-shadow: 0 2.5px 5px rgba(209, 236, 193, 0.4);
+  transform: translateY(-2px);
+  background: #84b87c;
+  background: radial-gradient(
+    circle,
+    rgba(132, 184, 124, 1) 0%,
+    rgba(186, 221, 164, 1) 75%
+  );
 }
 
 @media screen and (max-width: 627px) {

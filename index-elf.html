@@ -7,35 +7,46 @@
   <title>Weather Elf</title>
   <body>
     <h1 id="pagetitle">Create your Elf</h1>
+      <dialog id="modal-warning" class="modal-is-closed">
+        <h2 id="modal-title">Fairies need breaks too!</h2>
+        <p id="modal-dialog">You've been working them too hard! Refresh the page so they can grab a cup of tea.</p>
+        <button class="modal-close-btn" onclick="closeWarning()">Whoops, sorry!</button>
+      </dialog>
       <div id="elf-container">
         <div id="elf-area">
           <img id="elf-bckgnd"></img>
           <img id="elf-wings"></img>
           <img id="elf-body"></img>
           <img id="elf-hair"></img>
+          <img id="elf-socks"></img>
           <img id="elf-gloves"></img>
-          <img id="elf-dress"></img>
           <img id="elf-shoes"></img>
+          <img id="elf-dress"></img>
           <img id="elf-accent"></img>
+          <img id="elf-headwear"></img>
         </div>
         <div id="buttons">
           <div class="btn-column-prev">
           <button type="button" id="btn-prev" class="btn" onclick="previousBckgnd()">⊰Background</button>
+          <button type="button" id="btn-prev" class="btn" onclick="previousHeadwear()">⊰Headwear</button>
           <button type="button" id="btn-prev" class="btn" onclick="previousHair()">⊰Hair</button>
           <button type="button" id="btn-prev" class="btn" onclick="previousBody()">⊰Body</button>
           <button type="button" id="btn-prev" class="btn" onclick="previousWings()">⊰Wings</button>
           <button type="button" id="btn-prev" class="btn" onclick="previousDress()">⊰Dress</button>
           <button type="button" id="btn-prev" class="btn" onclick="previousGloves()">⊰Gloves</button>
+          <button type="button" id="btn-prev" class="btn" onclick="previousSocks()">⊰Socks</button>
           <button type="button" id="btn-prev" class="btn" onclick="previousShoes()">⊰Shoes</button>
           <button type="button" id="btn-prev" class="btn" onclick="previousAccent()">⊰Accent</button>
           </div>
           <div class="btn-column-next">
           <button type="button" id="btn-nxt" class="btn" onclick="nextBckgnd()">Background⊱</button>
+          <button type="button" id="btn-nxt" class="btn" onclick="nextHeadwear()">Headwear⊱</button>
           <button type="button" id="btn-nxt" class="btn" onclick="nextHair()">Hair⊱</button>
           <button type="button" id="btn-nxt" class="btn" onclick="nextBody()">Body⊱</button>
           <button type="button" id="btn-nxt" class="btn" onclick="nextWings()">Wings⊱</button>
           <button type="button" id="btn-nxt" class="btn" onclick="nextDress()">Dress⊱</button>
           <button type="button" id="btn-nxt" class="btn" onclick="nextGloves()">Gloves⊱</button>
+          <button type="button" id="btn-nxt" class="btn" onclick="nextSocks()">Socks⊱</button>
           <button type="button" id="btn-nxt" class="btn" onclick="nextShoes()">Shoes⊱</button>
           <button type="button" id="btn-nxt" class="btn" onclick="nextAccent()">Accent⊱</button>
           </div>
@@ -51,7 +62,7 @@
     </div>
     <div id="timestamp"></div>
         <div class="btn-toolbar">
-          <button id="search" class="btn-tool" onclick="getWeather()">Check Weather</button>
+          <button id="search" class="btn-tool" onclick="weatherInterval()">Refresh Weather</button>
           <a id="page-switch"  href="index.html" class="btn-tool" onclick="switchPage()">Is that...a flower field?</a>
           <button type="button" id="hide" class="btn-tool" onclick="hideButtons()">Hide Buttons</button>
           <button type="button" id="reset" class="btn-tool" onclick="resetPage()">Reset Page</button>

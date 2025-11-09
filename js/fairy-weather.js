@@ -10,6 +10,8 @@ function init() {
   }
 
   checkMemory();
+  getWeather();
+  weatherInterval();
   console.log("Window has loaded");
 }
 
@@ -53,7 +55,7 @@ function checkMemory() {
 // Weather Functions
 function getWeather() {
   const apiKey = "be4cbc6ddb60c449b151f55d149abd04";
-  navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+  navigator.geolocation.getCurrentPosition(successCallback);
 
   function successCallback(position) {
     const coordinates = {
@@ -85,23 +87,6 @@ function getWeather() {
         alert("Error fetching hourly forecast data. Please try again. :(");
       });
   }
-
-  function errorCallback(error) {
-    switch (error.code) {
-      case error.PERMISSION_DENIED:
-        console.log("User denied the request for Geolocation.");
-        break;
-      case error.POSITION_UNAVAILABLE:
-        console.log("Location information is unavailable.");
-        break;
-      case error.TIMEOUT:
-        console.log("The request to get user location timed out.");
-        break;
-      case error.UNKNOWN_ERROR:
-        console.log("An unknown error occurred.");
-        break;
-    }
-  }
 }
 
 function displayWeather(data) {
@@ -111,7 +96,6 @@ function displayWeather(data) {
   const hourlyForecastDiv = document.getElementById("hourly-forecast");
   const weatherTimestamp = document.getElementById("timestamp");
 
-  // Clear previous content
   weatherInfoDiv.innerHTML = "";
   hourlyForecastDiv.innerHTML = "";
   tempDivInfo.innerHTML = "";
@@ -136,7 +120,6 @@ function displayWeather(data) {
     weatherTimestamp.innerHTML = dateTime;
 
     showImage();
-    searchButton();
   }
 }
 
@@ -162,20 +145,33 @@ function displayHourlyForecast(hourlyData) {
   });
 }
 
-// Displays the weather icon for the hourly panel
 function showImage() {
   const weatherIcon = document.getElementById("weather-icon");
   weatherIcon.style.display = "block";
 }
 
-// Reset Button
+// Weather refresh every 2 hours
+const warningPopup = document.getElementById("modal-warning");
+const intervalId = setInterval(weatherInterval, 3 * 60 * 60 * 1000);
+
+function openWarning() {
+  warningPopup.classList.remove("modal-is-closed");
+  warningPopup.classList.add("modal-is-opened");
+}
+
+function closeWarning() {
+  warningPopup.classList.remove("modal-is-opened");
+  warningPopup.classList.add("modal-is-closed");
+}
+
+function weatherInterval() {
+  setTimeout(() => {
+    clearInterval(intervalId);
+    openWarning(warningPopup);
+  }, 9 * 60 * 60 * 1000);
+}
+
 function resetPage() {
   localStorage.clear();
   location.reload();
-}
-
-// Change Search Button Text on click
-function searchButton() {
-  const searchButton = document.getElementById("search");
-  searchButton.textContent = "Refresh Weather";
 }

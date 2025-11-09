@@ -10,6 +10,8 @@ function init() {
   }
 
   checkMemory();
+  getWeather();
+  weatherInterval();
   console.log("Window has loaded");
 }
 
@@ -18,9 +20,11 @@ function checkMemory() {
   const savedBckgnd = JSON.parse(localStorage.getItem("elf-bckgnd"));
   const savedWings = JSON.parse(localStorage.getItem("elf-wings"));
   const savedBody = JSON.parse(localStorage.getItem("elf-body"));
+  const savedHeadwear = JSON.parse(localStorage.getItem("elf-headwear"));
   const savedHair = JSON.parse(localStorage.getItem("elf-hair"));
   const savedDress = JSON.parse(localStorage.getItem("elf-dress"));
   const savedGloves = JSON.parse(localStorage.getItem("elf-gloves"));
+  const savedSocks = JSON.parse(localStorage.getItem("elf-socks"));
   const savedShoes = JSON.parse(localStorage.getItem("elf-shoes"));
   const savedAccent = JSON.parse(localStorage.getItem("elf-accent"));
 
@@ -28,27 +32,33 @@ function checkMemory() {
     savedBckgnd ||
     savedWings ||
     savedBody ||
+    savedHeadwear ||
     savedHair ||
     savedDress ||
     savedGloves ||
+    savedSocks ||
     savedShoes ||
     savedAccent
   ) {
     showBckgnd(savedBckgnd);
     showWings(savedWings);
     showBody(savedBody);
+    showHeadwear(savedHeadwear);
     showHair(savedHair);
     showDress(savedDress);
     showGloves(savedGloves);
+    showSocks(savedSocks);
     showShoes(savedShoes);
     showAccent(savedAccent);
   } else {
     showBckgnd(bckgndIndex);
     showWings(wingsIndex);
     showBody(bodyIndex);
+    showHeadwear(headwearIndex);
     showHair(hairIndex);
     showDress(dressIndex);
     showGloves(glovesIndex);
+    showSocks(socksIndex);
     showShoes(shoesIndex);
     showAccent(accentIndex);
   }
@@ -98,7 +108,6 @@ function displayWeather(data) {
   const hourlyForecastDiv = document.getElementById("hourly-forecast");
   const weatherTimestamp = document.getElementById("timestamp");
 
-  // Clear previous content
   weatherInfoDiv.innerHTML = "";
   hourlyForecastDiv.innerHTML = "";
   tempDivInfo.innerHTML = "";
@@ -123,7 +132,6 @@ function displayWeather(data) {
     weatherTimestamp.innerHTML = dateTime;
 
     showImage();
-    searchButton();
   }
 }
 
@@ -149,20 +157,33 @@ function displayHourlyForecast(hourlyData) {
   });
 }
 
-// Displays the weather icon for the hourly panel
 function showImage() {
   const weatherIcon = document.getElementById("weather-icon");
   weatherIcon.style.display = "block";
 }
 
-// Reset Button
+// Weather refresh every 2 hours
+const warningPopup = document.getElementById("modal-warning");
+const intervalId = setInterval(weatherInterval, 3 * 60 * 60 * 1000);
+
+function openWarning() {
+  warningPopup.classList.remove("modal-is-closed");
+  warningPopup.classList.add("modal-is-opened");
+}
+
+function closeWarning() {
+  warningPopup.classList.remove("modal-is-opened");
+  warningPopup.classList.add("modal-is-closed");
+}
+
+function weatherInterval() {
+  setTimeout(() => {
+    clearInterval(intervalId);
+    openWarning(warningPopup);
+  }, 9 * 60 * 60 * 1000);
+}
+
 function resetPage() {
   localStorage.clear();
   location.reload();
-}
-
-// Change Search Button Text on click
-function searchButton() {
-  const searchButton = document.getElementById("search");
-  searchButton.textContent = "Refresh Weather";
 }
